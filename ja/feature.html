@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ailia DX Insight: AIを使う</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ailia DX Insight<span id="projectnumber">&#160;0.9.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">AIを使う </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2><a class="anchor" id="autotoc_md4"></a>
+画面構成</h2>
+<div class="image">
+<img src="screen.png" alt=""/>
+</div>
+<h2><a class="anchor" id="autotoc_md5"></a>
+AIに質問する</h2>
+<ol type="1">
+<li>ファイル画面またはチャット画面を開きます。画面左にあるサイドバーの「ファイル」、「チャット」をクリックすると開くことができます。<br  />
+ <img src="side_bar_askAI.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>画面下のチャットボックスに質問を入力し、送信ボタンをクリック（またはWindowsの場合はCtrl + Enter、macOSの場合はCmd + Enter）します。<br  />
+ <img src="query_chat.png" alt="" class="inline"/>    <br  />
+<br  />
+<ul>
+<li>音声入力を利用する場合<ol type="a">
+<li>チャットボックス右のマイクアイコンをクリックします。<br  />
+ <img src="ask-ai.png" alt="" class="inline"/>    <br  />
+<br  />
+ 当アプリをインストール後、初めてマイクアイコンをクリックした場合、音声認識に必要なAIモデルのダウンロードが開始されます。 ダウンロード完了後より音声入力が利用可能となります。<br  />
+ <img src="download_voice_model.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>質問内容をマイクに向かって話します<br  />
+</li>
+<li>再度マイクボタンをクリックし音声入力を完了します。<br  />
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>AIからの回答が表示されます。<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md6"></a>
+文書をインデックス登録して質問する</h2>
+<p >文書ファイルをインデックスに登録すると、登録した文書に記載された情報についてAIに質問することができます。 </p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+文書ファイルをインデックス登録する</h3>
+<ul>
+<li>登録したい文書ファイルを右クリックし、「このファイルをインデックスに追加」を選択します。選択したファイルのAIステータスアイコンが<img src="status_icon_done.png" alt="" class="inline" title="img"/>    となれば、登録完了です。<br  />
+ <img src="add_to_index.png" alt="" class="inline"/>    <br  />
+</li>
+<li>フォルダを右クリックし、「このフォルダ内のファイルをインデックスに追加」を選択すると、フォルダ内の全てのファイルをインデックス登録することができます。<br  />
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md8"></a>
+登録した文書ファイル内の情報について質問する</h3>
+<ol type="1">
+<li>画面下のチャットボックスの左にある、検索モードボタンをクリックし、「テキスト検索」を選択します。<br  />
+ <img src="text_search_mode.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>質問を入力し、送信します。<br  />
+ <img src="query_text_search.png" alt="" class="inline" title="img"/>    <br  />
+<br  />
+</li>
+<li>AIが関連するファイルを調べた回答が表示されます。<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md9"></a>
+文書ファイルをインデックスから削除する</h2>
+<ul>
+<li>インデックスから削除したい、登録済の文書ファイルを右クリックし、「このファイルをインデックスから削除」を選択します。<br  />
+ <img src="delete_index.png" alt="" class="inline"/>    <br  />
+<br  />
+ 選択したファイルのAIステータスアイコンが<img src="status_icon_undone.png" alt="" class="inline" title="img"/>    となれば、削除完了です。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md10"></a>
+文章を翻訳する</h2>
+<p >日本語で書かれた文は英語へ、日本語以外の言語で書かれた文は日本語へ翻訳されます。</p><ol type="1">
+<li>画面下のチャットボックスの検索モードボタンをクリックし、翻訳を選択します。<br  />
+ <img src="query_mode_translate.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>翻訳したい文を入力し、送信します。<br  />
+</li>
+<li>AIが翻訳した結果が表示されます。<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md11"></a>
+文書ファイルを要約する。</h2>
+<ol type="1">
+<li>要約したいファイルを右クリックし、「要約」をクリックします。<br  />
+ <img src="summarize.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>AIが要約した結果が表示されます。<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md12"></a>
+文書ファイルを翻訳する</h2>
+<ol type="1">
+<li>翻訳したいファイルを右クリックし、「翻訳」をクリックします。 対応しているファイルフォーマットはpdf, txt, md, docx, xlsx,です。 <img src="translate_document.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>AIが翻訳した結果が表示されます。翻訳結果の右下にある「保存」ボタンを押すと、翻訳結果をファイルとして保存することができます。 <img src="document_translate_result.png" alt="" class="inline"/><br  />
+<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md13"></a>
+画像を検索する</h2>
+<p >文書ファイルをインデックス登録すると同様の手順で画像ファイルをインデックス登録することで、類似画像検索を行うことができます。 インデックス登録された画像ファイルを対象に検索が実行されます。 テキストによる検索と、画像による検索の２通りの検索方法があります。 </p>
+<h3><a class="anchor" id="autotoc_md14"></a>
+テキストで検索</h3>
+<p >検索ワードに類似した画像を検索することができます。</p><ol type="1">
+<li>画面下のチャットボックス左にある検索モードボタンをクリックし、画像検索を選択します。<br  />
+ <img src="query_mode_image_search.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>チャットボックスに検索ワードを入力し、送信します。<br  />
+</li>
+<li>類似度順に検索結果が表示されます。表示された検索結果をクリックすると、全ての画像が類似度順に並べられグリッド表示されます。<br  />
+ <img src="image_search_result_card.png" alt="" class="inline"/>    <br  />
+<br  />
+ <img src="image_search_result.png" alt="" class="inline"/><br  />
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md15"></a>
+画像で検索</h3>
+<p >選択した画像に類似した画像を検索することができます。 画像はインデックス登録済である必要があります。</p><ol type="1">
+<li>検索したい画像ファイルを右クリックし、「この画像で類似検索」を選択します。<br  />
+ <img src="search_by_image.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>類似度順に検索結果が表示されます。表示された検索結果をクリックすると、全ての画像が類似度順に並べられグリッド表示されます。<br  />
+ <br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md16"></a>
+画像を生成する</h2>
+<ol type="1">
+<li>画面下のチャットボックスの左にある、検索モードボタンをクリックし、「画像生成」を選択します。<br  />
+ <img src="query_mode_image_gen.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>生成したい画像の概要を入力し、送信します。</li>
+<li>AIが画像を生成した結果が表示されます。<br  />
+ <img src="image_gen_result.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+</ol>
+<h2><a class="anchor" id="autotoc_md17"></a>
+議事録を取る</h2>
+<p >音声認識AIによって、手を動かすことなく議事録を取ることができます。</p><ol type="1">
+<li>左のサイドバーにある「議事録」ボタンをクリックし、議事録画面を開きます。<br  />
+ <img src="side_bar_minutes.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>画面右上の「場所を入力」に会議場所を入力します。会議名を変更することもできます。<br  />
+ <img src="input_mtg_place.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+<li>画面下部の「記録を開始」ボタンをクリックし、議事録の記録を開始します。<br  />
+ <img src="start_recording.png" alt="" class="inline"/>    <br  />
+<br  />
+ 音声認識に必要なAIモデルのダウンロードがお済みでない場合は、ダウンロードが開始されます。 ダウンロード完了後より利用可能となります。</li>
+<li>記録を終えるタイミングで、画面下部の「記録を停止」ボタンをクリックし、議事録を保存します。<br  />
+ <img src="stop_recording.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
+</ol>
+<h3><a class="anchor" id="autotoc_md18"></a>
+記録した議事録を確認する</h3>
+<p >議事録画面の左側に並ぶ議事録をクリックすると、記録した議事録を見ることができます。<br  />
+ <img src="recorded_minutes.png" alt="" class="inline"/>    <br  />
+<br  />
+</p>
+<p >記録された文の右側にあるボタンをクリックすると、文の訂正ができます。<br  />
+ <img src="edit_recoded_minutes.png" alt="" class="inline"/>    <br  />
+<br  />
+</p>
+<p >また、画面下部の「記録を開始」ボタンをクリックすることで、再度議事録を記録することができます。 </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>
