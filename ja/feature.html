@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ailia DX Insight<span id="projectnumber">&#160;0.9.4</span>
+   <div id="projectname">ailia DX Insight<span id="projectnumber">&#160;0.9.5</span>
    </div>
   </td>
  </tr>
@@ -65,16 +65,16 @@ $(function() {
   <div class="headertitle"><div class="title">AIを使う </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="autotoc_md8"></a>
+<div class="textblock"><h2><a class="anchor" id="autotoc_md44"></a>
 画面構成</h2>
 <div class="image">
 <img src="screen.png" alt=""/>
 </div>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md45"></a>
 AIに質問する</h2>
 <ol type="1">
-<li>ファイル画面またはチャット画面を開きます。画面左にあるサイドバーの「ファイル」、「チャット」をクリックすると開くことができます。<br  />
- <img src="side_bar_askAI.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「チャット」を選択します。<br  />
+ <img src="askAI_jp.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
 <li>画面下のチャットボックスに質問を入力し、送信ボタンをクリック（またはWindowsの場合はCtrl + Enter、macOSの場合はCmd + Enter）します。<br  />
@@ -100,45 +100,33 @@ AIに質問する</h2>
 <li>AIからの回答が表示されます。<br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md10"></a>
-文書をインデックス登録して質問する</h2>
-<p >文書ファイルをインデックスに登録すると、登録した文書に記載された情報についてAIに質問することができます。 </p>
-<h3><a class="anchor" id="autotoc_md11"></a>
-文書ファイルをインデックス登録する</h3>
-<ul>
-<li>登録したい文書ファイルを右クリックし、「このファイルをインデックスに追加」を選択します。選択したファイルのAIステータスアイコンが<img src="status_icon_done.png" alt="" class="inline" title="img"/>    となれば、登録完了です。<br  />
- <img src="add_to_index.png" alt="" class="inline"/>    <br  />
-</li>
-<li>フォルダを右クリックし、「このフォルダ内のファイルをインデックスに追加」を選択すると、フォルダ内の全てのファイルをインデックス登録することができます。<br  />
-</li>
-</ul>
-<h3><a class="anchor" id="autotoc_md12"></a>
-登録した文書ファイル内の情報について質問する</h3>
+<h2><a class="anchor" id="autotoc_md46"></a>
+文書ファイル内の情報についてAIに質問する</h2>
 <ol type="1">
-<li>画面下のチャットボックスの左にある、検索モードボタンをクリックし、「テキスト検索」を選択します。<br  />
- <img src="text_search_mode.png" alt="" class="inline"/>    <br  />
+<li>ファイルを右クリックして、「この文章を対象にチャット」を選択します。<br  />
+ <img src="search_scope.png" alt="" class="inline" title="img"/>    <br  />
 <br  />
 </li>
 <li>質問を入力し、送信します。<br  />
  <img src="query_text_search.png" alt="" class="inline" title="img"/>    <br  />
 <br  />
 </li>
-<li>AIが関連するファイルを調べた回答が表示されます。<br  />
+<li>AIが関連するファイルの内容を元に生成した回答が表示されます。<br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 文書ファイルをインデックスから削除する</h2>
 <ul>
-<li>インデックスから削除したい、登録済の文書ファイルを右クリックし、「このファイルをインデックスから削除」を選択します。<br  />
+<li>文章ファイル内の情報についてAIに質問すると、自動的にインデックスが作成されます。インデックスから削除したい、登録済の文書ファイルを右クリックし、「このファイルをインデックスから削除」を選択します。<br  />
  <img src="delete_index.png" alt="" class="inline"/>    <br  />
 <br  />
  選択したファイルのAIステータスアイコンが<img src="status_icon_undone.png" alt="" class="inline" title="img"/>    となれば、削除完了です。</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md48"></a>
 文章を翻訳する</h2>
 <p >日本語で書かれた文は英語へ、日本語以外の言語で書かれた文は日本語へ翻訳されます。</p><ol type="1">
-<li>画面下のチャットボックスの検索モードボタンをクリックし、翻訳を選択します。<br  />
- <img src="query_mode_translate.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「テキスト翻訳」を選択します。<br  />
+ <img src="text_translation_app_jp.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
 <li>翻訳したい文を入力し、送信します。<br  />
@@ -146,9 +134,13 @@ AIに質問する</h2>
 <li>AIが翻訳した結果が表示されます。<br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 文書ファイルを要約する。</h2>
 <ol type="1">
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「テキスト要約」を選択します。<br  />
+ <img src="text_summary_app_jp.png" alt="" class="inline"/>    <br  />
+<br  />
+</li>
 <li>要約したいファイルを右クリックし、「要約」をクリックします。<br  />
  <img src="summarize.png" alt="" class="inline"/>    <br  />
 <br  />
@@ -156,24 +148,27 @@ AIに質問する</h2>
 <li>AIが要約した結果が表示されます。<br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 文書ファイルを翻訳する</h2>
 <ol type="1">
-<li>翻訳したいファイルを右クリックし、「翻訳」をクリックします。 対応しているファイルフォーマットはpdf, txt, md, docx, xlsx,です。 <img src="translate_document.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「テキスト翻訳」を選択します。</li>
+<li>翻訳したいファイルを右クリックし、「翻訳」をクリックします。<br  />
+ 対応しているファイル形式は、設定画面の「インデックス」タブで設定されているインデックス対象拡張子です。<br  />
+ <img src="translate_document.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
 <li>AIが翻訳した結果が表示されます。翻訳結果の右下にある「保存」ボタンを押すと、翻訳結果をファイルとして保存することができます。 <img src="document_translate_result.png" alt="" class="inline"/><br  />
 <br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 画像を検索する</h2>
-<p >文書ファイルをインデックス登録すると同様の手順で画像ファイルをインデックス登録することで、類似画像検索を行うことができます。 インデックス登録された画像ファイルを対象に検索が実行されます。 テキストによる検索と、画像による検索の２通りの検索方法があります。 </p>
-<h3><a class="anchor" id="autotoc_md18"></a>
+<p >「画像検索」アプリより画像検索が可能です。 ファイルビューから画像ファイルを右クリックでインデックス登録することで、類似画像検索を行うことができます。 インデックス登録された画像ファイルを対象に検索が実行されます。 テキストによる検索と、画像による検索の２通りの検索方法があります。 </p>
+<h3><a class="anchor" id="autotoc_md52"></a>
 テキストで検索</h3>
 <p >検索ワードに類似した画像を検索することができます。</p><ol type="1">
-<li>画面下のチャットボックス左にある検索モードボタンをクリックし、画像検索を選択します。<br  />
- <img src="query_mode_image_search.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「画像検索」を選択します。<br  />
+ <img src="image_search_app_jp.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
 <li>チャットボックスに検索ワードを入力し、送信します。<br  />
@@ -184,9 +179,10 @@ AIに質問する</h2>
  <img src="image_search_result.png" alt="" class="inline"/><br  />
 </li>
 </ol>
-<h3><a class="anchor" id="autotoc_md19"></a>
+<h3><a class="anchor" id="autotoc_md53"></a>
 画像で検索</h3>
 <p >選択した画像に類似した画像を検索することができます。 画像はインデックス登録済である必要があります。</p><ol type="1">
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「画像検索」を選択します。</li>
 <li>検索したい画像ファイルを右クリックし、「この画像で類似検索」を選択します。<br  />
  <img src="search_by_image.png" alt="" class="inline"/>    <br  />
 <br  />
@@ -195,11 +191,14 @@ AIに質問する</h2>
  <br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md54"></a>
+音声を検索する</h2>
+<p >「音声検索」アプリより音声検索が可能です。 画像検索と同様に、音声ファイルをインデックス登録することで、テキストによる検索と、音声による検索の２通りの検索方法があります。</p>
+<h2><a class="anchor" id="autotoc_md55"></a>
 画像を生成する</h2>
 <ol type="1">
-<li>画面下のチャットボックスの左にある、検索モードボタンをクリックし、「画像生成」を選択します。<br  />
- <img src="query_mode_image_gen.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「画像生成」を選択します。<br  />
+ <img src="image_generation_app_jp.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
 <li>生成したい画像の概要を入力し、送信します。</li>
@@ -208,14 +207,14 @@ AIに質問する</h2>
 <br  />
 </li>
 </ol>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 議事録を取る</h2>
 <p >音声認識AIによって、手を動かすことなく議事録を取ることができます。</p><ol type="1">
-<li>左のサイドバーにある「議事録」ボタンをクリックし、議事録画面を開きます。<br  />
- <img src="side_bar_minutes.png" alt="" class="inline"/>    <br  />
+<li>画面左上のアプリボタンをクリックしてアプリ選択画面を開き、「議事録作成」を選択して議事録画面を開きます。<br  />
+ <img src="minute_app_jp.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
-<li>画面右上の「場所を入力」に会議場所を入力します。会議名を変更することもできます。<br  />
+<li>画面右上の「会議場所」に会議場所を入力します。会議名を変更することもできます。<br  />
  <img src="input_mtg_place.png" alt="" class="inline"/>    <br  />
 <br  />
 </li>
@@ -228,7 +227,7 @@ AIに質問する</h2>
 <br  />
 </li>
 </ol>
-<h3><a class="anchor" id="autotoc_md22"></a>
+<h3><a class="anchor" id="autotoc_md57"></a>
 記録した議事録を確認する</h3>
 <p >議事録画面の左側に並ぶ議事録をクリックすると、記録した議事録を見ることができます。<br  />
  <img src="recorded_minutes.png" alt="" class="inline"/>    <br  />

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ailia DX Insight: カスタムLLM</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ailia DX Insight<span id="projectnumber">&#160;0.9.5</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">カスタムLLM </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2><a class="anchor" id="autotoc_md26"></a>
+カスタムLLMの概要</h2>
+<p >ailia DX insightは、文章の生成をChatGPTで行います。 ChatGPTを使用する場合、クラウドへのデータ転送を伴うので、使用を制限せざるを得ないケースがあります。 ailia DX insightでは、ローカルに構築したカスタムLLMを接続することが可能です。 これにより、完全にセキュアな環境でailia DX Insightを動作させることが可能です。</p>
+<h2><a class="anchor" id="autotoc_md27"></a>
+カスタムLLMのサーバの構築</h2>
+<h3><a class="anchor" id="autotoc_md28"></a>
+ChatGPTの互換サーバについて</h3>
+<p >ailia DX insightはChatGPTの互換サーバに対応しています。この章では、FastChatを使ってローカルLLMをChatGPT API互換サーバーとして使用する方法を採用します。</p>
+<h3><a class="anchor" id="autotoc_md29"></a>
+FastChatのインストール</h3>
+<p >サーバーを立てる端末にpythonモジュールとしてfschatをインストールします。</p>
+<div class="fragment"><div class="line">pip3 install fschat</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md30"></a>
+サーバの起動</h3>
+<p >vicuna-7b-v1.5をChatGPT API互換サーバーとして起動します。</p>
+<div class="fragment"><div class="line">python3 -m fastchat.serve.controller</div>
+<div class="line">python3 -m fastchat.serve.model_worker –model-names “vicuna” –model-path lmsys/vicuna-7b-v1.5 –load-8bit</div>
+<div class="line">python3 -m fastchat.serve.openai_api_server –-host localhost –-port 8000</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md31"></a>
+カスタムLLMのクライアントの設定</h2>
+<h3><a class="anchor" id="autotoc_md32"></a>
+設定画面の呼び出し</h3>
+<p >ailia DX insightの初期画面にて、右上の歯車アイコンをクリックして設定ウィンドウを表示させます。</p>
+<h3><a class="anchor" id="autotoc_md33"></a>
+ChatGPTモデル選択メニューの表示</h3>
+<p >設定メニューの左側の一番上にChatGPTモデル選択メニューがあるので、これをクリックするとモデル一覧が表示されます。 ChatGptモデル選択メニューの下にある追加ボタンをクリックしてください。</p>
+<h3><a class="anchor" id="autotoc_md34"></a>
+カスタムモデル登録</h3>
+<p >カスタムモデル登録ウィンドウが開きます。各項目を記入します。</p>
+<ul>
+<li>名前：使用するLLMの名称 (UI表示にのみ使用するため何でも構わない)</li>
+<li>説明：必要に応じてメモとして使用</li>
+<li>モデル：OpenAI互換APIサーバーで指定したモデル名 (gpt-3.5-turbo等)</li>
+<li>URL(*)：OpenAI互換APIサーバーが発信しているIPアドレスとport番号 (サーバー公開が&ndash;host 192.168.1.10 &ndash;port 8000の場合、http://192.168.1.10:8000)</li>
+<li>最大トークン長：モデルの対応している最大トークン数を設定（4096以上の値を設定する、この値に応じてRAGのtopKが決定される）</li>
+</ul>
+<p >(*)未記入の場合、HTTPの接続エラーになります。</p>
+<div class="image">
+<img src="customllm.png" alt=""/>
+</div>
+    </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>
