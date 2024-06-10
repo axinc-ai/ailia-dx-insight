@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="overview.html" />
+    <link rel="next" href="SetUp.html" />
     
+    
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -86,7 +88,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -99,7 +101,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="overview.html">
+        <li class="chapter active" data-level="1.2" data-path="overview.html">
             
                 <a href="overview.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >HOME</a>
+        <a href="." >概要</a>
     </h1>
 </div>
 
@@ -306,14 +308,73 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="img/ailia_DX_logo_01.png" alt="ailia_logo.png"></p>
-<p>ailia DX Insightは、ax株式会社および株式会社アクセルが提供する、AIを使用した統合型DXアプリケーションです。</p>
-<blockquote>
-<p><a href="overview.html">概要</a></p>
-<p><a href="SetUp.html">セットアップ</a></p>
-<p><a href="UseAI.html">AIを使う</a></p>
-<p><a href="FileView.html">ファイルビューの操作</a></p>
-</blockquote>
+                                <h1 id="概要">概要</h1>
+<p>ailia DX Insightは複数のAIを使用することで、オフィスワークのDXを行うための統合型AIアプリです。</p>
+<h2 id="機能">機能</h2>
+<p>aillia DX insightでは下記の機能を使用可能です。各機能で使用されるモデルと実行環境は下記となります。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">機能</th>
+<th style="text-align:center">クラウドで動作</th>
+<th style="text-align:center">端末上で動作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">テキスト検索</td>
+<td style="text-align:center">ChatGPT（回答生成）</td>
+<td style="text-align:center">Multilingual-E5 Base（インデックス作成）</td>
+</tr>
+<tr>
+<td style="text-align:center">画像生成</td>
+<td style="text-align:center">DALLE</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">翻訳・要約・アイデア出し</td>
+<td style="text-align:center">ChatGPT</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">画像検索</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Japanese CLIP</td>
+</tr>
+<tr>
+<td style="text-align:center">音声入力</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Whisper、SileroVAD</td>
+</tr>
+<tr>
+<td style="text-align:center">音声認識</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Whisper、SileroVAD</td>
+</tr>
+<tr>
+<td style="text-align:center">議事録</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">Whisper、SileroVAD</td>
+</tr>
+<tr>
+<td style="text-align:center">OCR</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">PaddleOCR</td>
+</tr>
+</tbody>
+</table>
+<h2 id="対応ファイルフォーマット">対応ファイルフォーマット</h2>
+<p>ailia DX Insightがサポートしている形式は下記となります。</p>
+<h6 id="ドキュメントフォーマット">ドキュメントフォーマット</h6>
+<p><code>&apos;c&apos;, &apos;cpp&apos;, &apos;csv&apos;, &apos;json&apos;, &apos;java&apos;, &apos;md&apos;, &apos;py&apos;, &apos;rb&apos;, &apos;tex&apos;, &apos;txt&apos;, &apos;css&apos;, &apos;php&apos;, &apos;pdf&apos;, &apos;docx&apos;, &apos;xlsx&apos;,</code></p>
+<h6 id="画像フォーマット">画像フォーマット</h6>
+<p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
+<h6 id="音声フォーマット">音声フォーマット</h6>
+<p><code>&apos;wav&apos;</code></p>
+<h2 id="ファイルの保存先">ファイルの保存先</h2>
+<p>ailia DX Insightは下記のフォルダにデータベースやモデルファイルを保存します。このフォルダを削除することで、ailia DX Insightを初期化することができます。<br>
+<code>Windows : c:/Users/[UserName]/Documents/ailia DX Insight</code><br>
+<code>macOS : ~/Documents/ailia DX Insight</code><br></p>
 
                                 
                                 </section>
@@ -341,8 +402,12 @@
 
             
                 
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: HOME">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 概要">
+                
+                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: セットアップ">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -353,7 +418,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HOME","level":"1.1","depth":1,"next":{"title":"概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2024-06-06T11:32:09.470Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-06T11:56:54.159Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"概要","level":"1.2","depth":1,"next":{"title":"セットアップ","level":"1.3","depth":1,"path":"SetUp.md","ref":"SetUp.md","articles":[]},"previous":{"title":"HOME","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"overview.md","mtime":"2024-06-05T20:52:39.367Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-06T11:33:26.892Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="overview.html" />
+    <link rel="next" href="SearchImage.html" />
     
+    
+    <link rel="prev" href="AskToAI.html" />
     
 
     </head>
@@ -86,7 +88,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -152,7 +154,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="FileIndex.html">
+        <li class="chapter active" data-level="1.4.2" data-path="FileIndex.html">
             
                 <a href="FileIndex.html">
             
@@ -291,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >HOME</a>
+        <a href="." >文章ファイルをインデックス登録して質問する</a>
     </h1>
 </div>
 
@@ -306,14 +308,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="img/ailia_DX_logo_01.png" alt="ailia_logo.png"></p>
-<p>ailia DX Insightは、ax株式会社および株式会社アクセルが提供する、AIを使用した統合型DXアプリケーションです。</p>
-<blockquote>
-<p><a href="overview.html">概要</a></p>
-<p><a href="SetUp.html">セットアップ</a></p>
-<p><a href="UseAI.html">AIを使う</a></p>
-<p><a href="FileView.html">ファイルビューの操作</a></p>
-</blockquote>
+                                <h1 id="文章ファイルをインデックス登録して質問する">文章ファイルをインデックス登録して質問する</h1>
+<p>文書ファイルをインデックスに登録すると、登録した文書に記載された情報についてAIに質問することができます。
+<br></p>
+<h3 id="文書ファイルをインデックス登録する">文書ファイルをインデックス登録する</h3>
+<ul>
+<li>登録したい文書ファイルを右クリックし、「このファイルをインデックスに追加」を選択します。選択したファイルのAIステータスアイコンが <img src="img/status_icon_done.png" alt="status_icon_done.png">となれば、登録完了です。<br>
+<img src="img/UseAI_06.png" alt="useai_06.png"><br></li>
+<li>フォルダを右クリックし、「このフォルダ内のファイルをインデックスに追加」を選択すると、フォルダ内の全てのファイルをインデックス登録することができます。
+<br></li>
+</ul>
+<h3 id="登録した文書ファイル内の情報について質問する">登録した文書ファイル内の情報について質問する</h3>
+<ol>
+<li>画面左上のアプリメニューから「チャット」を選択します。<br>
+<img src="img/UseAI_02_02.png" alt="useai_07.png"><br></li>
+<li>インデックスから質問したい文書ファイルを右クリックし、「この文章を対象にチャット」を選択します。
+<img src="img/UseAI_08_02.png" alt="useai_08_02.png"><br></li>
+<li>質問を入力し、送信します。<br>
+<img src="img/UseAI_08.png" alt="useai_08.png"><br></li>
+<li>AIが関連するファイルを調べた回答が表示されます。
+<br></li>
+</ol>
+<h2 id="文書ファイルをインデックスから削除する">文書ファイルをインデックスから削除する</h2>
+<ol>
+<li>インデックスから削除したい、登録済の文書ファイルを右クリックし、「このファイルをインデックスから削除」を選択します。<br>
+<img src="img/UseAI_09.png" alt="useai_09.png"><br></li>
+<li>選択したファイルのAIステータスアイコンが <img src="img/hourglass.png" alt="hourglass.png">となれば、削除完了です。
+<br></li>
+</ol>
+<h2 id="文章を翻訳する">文章を翻訳する</h2>
+<p>日本語で書かれた文は英語へ、日本語以外の言語で書かれた文は日本語へ翻訳されます。</p>
+<ol>
+<li>画面左上のアプリメニューから「テキスト翻訳」を選択します。<br>
+<img src="img/UseAI_10.png" alt="useai_10.png"><br></li>
+<li>翻訳したい文を入力し、送信します。</li>
+<li>AIが翻訳した結果が表示されます。
+<br></li>
+</ol>
+<h2 id="文書ファイルを要約する。">文書ファイルを要約する。</h2>
+<ol>
+<li>画面左上のアプリメニューから「テキスト要約」を選択します。
+<img src="img/UseAI_07.png" alt="useai_07.png"><br></li>
+<li>要約したいファイルを右クリックし、「要約」をクリックします。<br>
+<img src="img/UseAI_11.png" alt="useai_11.png"><br></li>
+<li>AIが要約した結果が表示されます。
+<br></li>
+</ol>
+<h2 id="文書ファイルを翻訳する">文書ファイルを翻訳する</h2>
+<ol>
+<li>画面左上のアプリメニューから「テキスト翻訳」を選択します。</li>
+<li>翻訳したいファイルを右クリックし、「翻訳」をクリックします。 対応しているファイルフォーマットはpdf, txt, md, docx, xlsx,です。<br>
+<img src="img/UseAI_12.png" alt="useai_12.png"><br></li>
+<li>AIが翻訳した結果が表示されます。翻訳結果の右下にある「保存」ボタンを押すと、翻訳結果をファイルとして保存することができます。 
+<br></li>
+</ol>
+<p><a href="UseAI.html">一覧に戻る</a></p>
 
                                 
                                 </section>
@@ -341,8 +390,12 @@
 
             
                 
+                <a href="AskToAI.html" class="navigation navigation-prev " aria-label="Previous page: AIに質問する">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 概要">
+                
+                <a href="SearchImage.html" class="navigation navigation-next " aria-label="Next page: 画像を検索する">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -353,7 +406,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HOME","level":"1.1","depth":1,"next":{"title":"概要","level":"1.2","depth":1,"path":"overview.md","ref":"overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2024-06-06T11:32:09.470Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-06T11:56:54.159Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"文章ファイルをインデックス登録して質問する","level":"1.4.2","depth":2,"next":{"title":"画像を検索する","level":"1.4.3","depth":2,"path":"SearchImage.md","ref":"SearchImage.md","articles":[]},"previous":{"title":"AIに質問する","level":"1.4.1","depth":2,"path":"AskToAI.md","ref":"AskToAI.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FileIndex.md","mtime":"2024-06-06T11:33:11.366Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2024-06-06T11:33:26.892Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
