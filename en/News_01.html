@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Update1.1 · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,35 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
+                                        <h1>ailia DX Insight Update Guide from 1.0 to 1.1</h1>
+                                        <p>In ailia DX Insight 1.1, the application's digital certificate has been updated. In Microsoft's installer, msix, when a digital certificate is updated, it is recognized as a different application.  （Reference:<a target="_blank" href="https://github.com/microsoft/msix-packaging/issues/365"></a>https://github.com/microsoft/msix-packaging/issues/365</a>） Therefore, when updating from ailia DX Insight 1.0 to 1.1, please follow the steps below, uninstall the old version and then install the new one.<br>
+
+
+                                        <h2>For Windows</h2>
+                                        <p>Select ailia_dx_insight from the Start menu, right-click, and uninstall.<br>
+                                        （If you cannot find it in the Start menu, please search in "All Apps"）</p>
+                                        <p><img src="img/UpdateGuide_01.jpg" alt="UpdateGuide_01.jpg"></p>
+                                        <p>Double-click on ailia_dx_insight.msix and proceed with the installation.</p>
+                                        <p><img src="img/UpdateGuide_02.png" alt="UpdateGuide_02.png"></p>
+                                        <p>User data is stored in<code>c:/Users/[UserName]/Documents(*)/ailia DX Insight</code>. so it will be retained.</p>
+
+                                        <p>（*）It may also be displayed as "My Documents."</p>
+
+                                        <h2>For Mac</h2>
+                                        <p>Open ailia_dx_insight.dmg and overwrite by dropping ailia_dx_insight.app into the Application folder.</p>
+
+                                        <h2>Config File Update</h2>
+                                        <p>If you are using a config file in ailia DX Insight 1.0, the config file needs to be updated. At the first launch of ailia DX Insight 1.1, the dialog below will be displayed, so please set the path for the config file.</p>
+                                        <p><img src="img/ConfigFile_02.png" alt="ConfigFile_02.png"></p>
+                                        <p>If there have been changes to the file since the registration of the config file, the following dialog confirming whether to reload will be displayed.
+                                            Select "Yes" to reload the config file, and the changes will be applied.</p>
+                                        <p><img src="img/ConfigFile_03.png" alt="ConfigFile_03.png"></p>
+                                        <p>Furthermore, from the settings screen → Config Files, it is possible to manually register a config file.<br>It is also possible to unregister a config file on the same screen.</p>
+                                        <p><img src="img/ConfigFile_01.png" alt="ConfigFile_01.png"></p>
+
+
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4><a href="index.html">Back to HOME</a></h4>
 
                                                             
                                     </section>
@@ -655,13 +652,8 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: HOME">
                     <i class="fa fa-angle-left"></i>
-                </a>
-                
-                
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
-                    <i class="fa fa-angle-right"></i>
                 </a>
             
             </div>

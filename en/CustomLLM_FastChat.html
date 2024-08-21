@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Build Custom LLM with FastChat · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -398,7 +398,7 @@
                                             
                                         </li>
 
-                                        <li class="chapter " data-level="4.1.1.4" data-path="CustomLLM_FastChat.html">
+                                        <li class="chapter active" data-level="4.1.1.4" data-path="CustomLLM_FastChat.html">
                                             
                                             <a href="CustomLLM_FastChat.html">
                                         
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -597,39 +597,30 @@
                                 <div class="search-noresults">
                                 
                                     <section class="normal markdown-section">
-                                    
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
+                                        
+                                        <h1 id="build-custom-llm-with-fastchat">Build Custom LLM with FastChat</h1>
+                                        <h2 id="installing-fastchat">Installing FastChat</h2>
+                                        <p>Install fschat as a Python module on the terminal where you want to set up the server.
+                                        <code>pip3 install fschat</code></p>
+                                        <h2 id="starting-the-server">Starting the Server</h2>
+                                        <p>Start vicuna-7b-v1.5 as a ChatGPT API compatible server.<br>
+                                        <code>python3 -m fastchat.serve.controller</code><br>
+                                        <code>python3 -m fastchat.serve.model_worker –model-names “vicuna” –model-path lmsys/vicuna-7b-v1.5 –load-8bit</code><br>
+                                        <code>python3 -m fastchat.serve.openai_api_server –-host localhost –-port 8000</code><br></p>
+                                        <h2 id="registering-custom-llm-in-ailia-dx-insight">Registering Custom LLM in ailia DX Insight</h2>
+                                        <p>Refer to <a href="CustomLLM.html">here</a> for detailed settings.<br>
+                                        <img src="img/CustomLLM_02.png" alt="CustomLLM_02.png"><br></p>
                                         <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
+                                        <li>Name: The name of the LLM to be used (can be anything as it is used only for UI display)</li>
                                         <li>Description: Use as a memo as needed</li>
+                                        <li>Model: The name of the model specified in the OpenAI compatible API server (gpt-3.5-turbo, etc.)</li>
+                                        <li>URL(*): The IP address and port number issued by the OpenAI compatible API server (e.g., if the server is published as –host 192.168.1.10 –port 8000, use <a href="http://192.168.1.10:8000" target="_blank">http://192.168.1.10:8000</a>)</li>
+                                        <li>Maximum Token Length: Set the maximum token count supported by the model (4096 or greater, the topK for RAG is determined based on this value)
+                                        <br></li>
                                         </ul>
+                                        <p>(*) If not filled, an HTTP connection error will occur.</p>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="CustomLLM_Recomend.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +646,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="CustomLLM_Ollama.html" class="navigation navigation-prev " aria-label="Previous page: Build Custom LLM with Ollama">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="CustomLLM_Recomend.html" class="navigation navigation-next " aria-label="Next page: Our Recommended LLM">
                     <i class="fa fa-angle-right"></i>
                 </a>
             
