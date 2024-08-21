@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Our Recommended LLM · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -411,7 +411,7 @@
                                             
                                         </li>
 
-                                        <li class="chapter " data-level="4.1.1.5" data-path="CustomLLM_Recomend.html">
+                                        <li class="chapter active" data-level="4.1.1.5" data-path="CustomLLM_Recomend.html">
                                             
                                             <a href="CustomLLM_Recomend.html">
                                         
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,73 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
+                                        <h1 id="recommended-llms-by-our-company">Recommended LLMs by Our Company</h1>
+                                        <p>A list of recommended LLMs for PCs with less than 8GB or up to 8GB of GPU memory.</p>
+                                        <h2 id="recommended-llm-list">Recommended LLM List</h2>
+                                        <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
+                                        <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
+                                        <p>Features: Provided by Microsoft. Despite being a very small model with 3.8B (3.8 billion parameters), it has performance equivalent to models more than twice its size.</p>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h3 id="qwenqwen2-05b--instruct-gguf">Qwen/Qwen2-0.5B -Instruct-GGUF</h3>
+                                        <h3 id="qwenqwen2-7b-instruct-gguf">Qwen/Qwen2-7B-Instruct-GGUF</h3>
+                                        <p>Features: Provided by Alibaba Cloud. It leverages training data in 27 languages in addition to English and Chinese, showing high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 0.5B model is very small and optimal for use on low-spec PCs due to its limited knowledge capacity.</p>
+                                        <p><br></p>
+                                        <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf</h3>
+                                        <p>Features: A highly capable Japanese LLM created by integrating four models: Japanese-Starling-ChatV-7B, Ninja-v1-RP-expressive-v2, Vecteus-v1, and Japanese-Chat-Umievo-itr004-7b4.</p>
+                                        <p><br></p>
+                                        <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
+                                        <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
+                                        <p>Features: Provided by Microsoft. Despite being a very small model with 3.8B (3.8 billion parameters), it has performance equivalent to models more than twice its size. Currently, two models supporting 4K tokens and 128K tokens are available.</p>
+                                        <p><br></p>
+                                        <h3 id="qwenqwen2-05b--instruct-gguf">Qwen/Qwen2-0.5B -Instruct-GGUF</h3>
+                                        <h3 id="qwenqwen2-7b-instruct-gguf">Qwen/Qwen2-7B-Instruct-GGUF</h3>
+                                        <p>Features: Provided by Alibaba Cloud. It leverages training data in 27 languages in addition to English and Chinese, showing high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 0.5B model is very small and optimal for use on low-spec PCs due to its limited knowledge capacity.</p>
+                                        <p><br></p>
+                                        <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf</h3>
+                                        <p>Features: A highly capable Japanese LLM created by integrating four models: Japanese-Starling-ChatV-7B, Ninja-v1-RP-expressive-v2, Vecteus-v1, and Japanese-Chat-Umievo-itr004-7b4.</p>
+                                        <p><br></p>
+                                        <h3 id="mmngadatapilot-arrowpro-7b-kujira-gguf">mmnga/DataPilot-ArrowPro-7B-KUJIRA-gguf</h3>
+                                        <h3 id="mmngaarrowpro-7b-killerwhale-gguf">mmnga/ArrowPro-7B-KillerWhale-gguf</h3>
+                                        <p>Features: Developed based on the open-source LLM &quot;NTQAI/chatntq-ja-7b-v1.0&quot; for use in AI-powered virtual YouTubers (AITubers) and AI assistants. It has high performance in Japanese and is highly rated for conversation quality. &quot;ArrowPro-7B-KillerWhale&quot; is positioned as an enhanced version of &quot;DataPilot/ArrowPro-7B-KUJIRA&quot;.</p>
+                                        <p><br></p>
+                                        <h3 id="lmstudio-communitygemma-2-9b-it-gguf">lmstudio-community/gemma-2-9b-it-GGUF</h3>
+                                        <p>Features: Built using the same architecture as Google&apos;s cutting-edge AI model Gemini, Gemma2 is lightweight yet highly performant. The 27B parameter model delivers top-notch performance in its size class, competing with models more than twice its size. The 9B parameter model also outperforms other open models of the same size.</p>
+                                        <p><br></p>
+                                        <h3 id="lmstudio-communitymeta-llama-3-8b-instruct-gguf">lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF</h3>
+                                        <p>Features: Provided by Meta. Learned using about seven times the dataset of Llama2, it has rich knowledge and can handle a wide range of topics in detail. It has been improved to handle tasks such as generation and inference highly and efficiently.</p>
+                                        <p><br></p>
+                                        <h3 id="mmngallama-3-elyza-jp-8b-gguf">mmnga/Llama-3-ELYZA-JP-8B-gguf</h3>
+                                        <p>A Japanese-specific LLM provided by ELYZA Inc., an AI company from Professor Matsuo&apos;s Lab at the University of Tokyo. Trained with a large Japanese dataset based on Meta&apos;s Llama 3 8B-Instruct, it is familiar with Japanese grammar, vocabulary, and cultural background, accurately understanding Japanese-specific expressions and nuances, and generating refined Japanese sentences.</p>
+                                        <p><br></p>
+                                        <h3 id="lmstudio-communitygemma-2-27b-it-gguf">lmstudio-community/gemma-2-27b-it-GGUF</h3>
+                                        <p>Features: Built using the same architecture as Google&apos;s cutting-edge AI model Gemini, Gemma2 is lightweight yet highly performant. The 27B parameter model delivers top-notch performance in its size class, competing with models more than twice its size. The 9B parameter model also outperforms other open models of the same size.</p>
+                                        <p><br></p>
+                                        <h3 id="andrewcanisc4ai-command-r-v01-gguf">andrewcanis/c4ai-command-r-v01-GGUF</h3>
+                                        <p>Features: Command-R is an LLM made by CohereForAI, containing 35B (35 billion) parameters. This model excels in generating text, summarizing, and answering questions based on a large amount of information. It also supports long-contexts up to 128k tokens.</p>
+                                        <p><br></p>
+                                        <h3 id="pmyslc4ai-command-r-plus-gguf">pmysl/c4ai-command-r-plus-GGUF</h3>
+                                        <p>Features: Command R+ is an enhanced version of Command R, containing 104B (104 billion) parameters. This model is designed to deliver exceptional performance for enterprise use, achieving performance close to GPT-4 Turbo while being open-source. It also supports long-contexts up to 128K tokens.
+                                        (Note) About the Use of command-r-v01/Command R Plus: command-r-v01/Command R Plus is an LLM intended for non-commercial use, allowing for model modification and distribution. For commercial use, the paid API service from the provider must be used, so please be aware. The paid API can be obtained from the following site: (<a href="https://cohere.com/command" target="_blank">https://cohere.com/command</a>)</p>
+                                        <p><br></p>
+                                        <h3 id="qwenqwen2-72b-instruct-gguf">Qwen/Qwen2-72B-Instruct-GGUF</h3>
+                                        <p>Provided by Alibaba Cloud. Leveraging training data in 27 languages in addition to English and Chinese, it shows high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 7B‧72B models support long-contexts up to 128K tokens.</p>
+                                        <p><br></p>
+                                        <h3 id="lmstudio-communitymeta-llama-3-70b-instruct-gguf">lmstudio-community/Meta-Llama-3-70B-Instruct-GGUF</h3>
+                                        <p>Features: Provided by Meta. Learned using about seven times the dataset of Llama2, it has rich knowledge and can handle a wide range of topics in detail. It has been improved to handle tasks such as generation and inference highly and efficiently.</p>
+                                        <h2 id="supplementary-information-about-our-recommended-llms足">Supplementary Information about Our Recommended LLMs足</h2>
+                                        <p>When you search for recommended LLMs in LM Studio, many models may be displayed as follows.<br>
+                                        We recommend using 4-bit quantized models, which are balanced in size and performance.<br>
+                                        (*Specifically, models with Q4_K_M notation or similar quantization)<br>
+                                        <img src="img/CustomLLM_15.png" alt="CustomLLM_15"><br></p>
+                                        <h2 id="when-running-lm-studio-on-a-linux-server">When Running LM Studio on a Linux Server</h2>
+                                        <p>If you encounter the following error when trying to connect to ailia DX insight from a Linux server running LM Studio, it may be due to port access being blocked by the Linux server firewall settings.<br>
+                                        <img src="img/CustomLLM_16.png" alt="CustomLLM_16.png"><br>
+                                        Allow access to the port with the following command.<br>
+                                        <code>sudo ufw allow 1234/tcp</code><br>
+                                        (*Replace the above port number &quot;1234&quot; with the number set in LM Studio)<br>
+                                        <img src="img/CustomLLM_17.png" alt="CustomLLM_17.png"><br></p>
+                                        <p><br></p>
+                                        <h4 id="next ＞"><a href="RAG.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +690,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="CustomLLM_FastChat.html" class="navigation navigation-prev " aria-label="Previous page: Build Custom LLM with FastChat">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="RAG.html" class="navigation navigation-next " aria-label="Next page: Improve Response Accuracy with RAG">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

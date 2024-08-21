@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Overview · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -61,7 +61,7 @@
                             
                         </li>
 
-                        <li class="chapter " data-level="1.2" data-path="overview.html">
+                        <li class="chapter active" data-level="1.2" data-path="overview.html">
                             
                             <a href="overview.html">
                         
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,92 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
-                                        <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h1 id="overview">Overview</h1>
+                                            <p>ailia DX Insight is an AI super app for corporate DX provided by ax Corporation and Axel Corporation.<br>
+                                            By simply installing it on Windows or macOS, anyone can make use of AI in their business operations. <br>
+                                            With unique AI from ailia added to text search, image search, voice recognition, corporate information search in large language models, it makes it easy to improve business efficiency using AI.<br></p>
+                                            <p><img src="img/overview_01.png" alt="overview_01.png"></p>
+                                            <h2 id="features">Features</h2>
+                                            <p>Below features can be used in aillia DX insight. The models used in each feature and execution environments are as follows.</p>
+                                            <div class="scroll_area" style="width:100%;max-width:800px;overflow-x:scroll;">
+                                                <table style="width:800px;">
+                                                <thead>
+                                                <tr>
+                                                <th>Function</th>
+                                                <th>Operates on Cloud</th>
+                                                <th>Operates on Device</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                <td>Text Search　(RAG)</td>
+                                                <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
+                                                <td>ailia SDK (Index Creation, Vector Search, Re-Rank Feature), Custom LLM (Response Generation)</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Image Generation</td>
+                                                <td>DALLE</td>
+                                                <td>StableDiffusion(* In Preparation)</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Summary / Idea Generation</td>
+                                                <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
+                                                <td>Custom LLM</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Translation</td>
+                                                <td>ChatGPT, Azure OpenAI, Gemini, Claude(* In Preparation) (Response Generation)</td>
+                                                <td>ailia SDK, Custom LLM</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Image Search</td>
+                                                <td>-</td>
+                                                <td>ailia SDK</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Voice Input</td>
+                                                <td>-</td>
+                                                <td>ailia SDK</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Voice Recognition</td>
+                                                <td>-</td>
+                                                <td>ailia SDK</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Meeting Minutes</td>
+                                                <td>-</td>
+                                                <td>ailia SDK</td>
+                                                </tr>
+                                                <tr>
+                                                <td>OCR</td>
+                                                <td>Azure AI Vision(* In Preparation)</td>
+                                                <td>ailia SDK</td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                            </div>
+
+                                            <h2 id="supported-file-formats">Supported File Formats</h2>
+                                            <p>The formats supported by ailia DX Insight are as follows.</p>
+                                            <h6 id="common-office-document-formats">Common Office Document Formats</h6>
+                                            <p><code>pdf, doc, docx, txt, md, xlsx, csv, tex, css, html</code></p>
+                                            <h6 id="program-document-formats">Program Document Formats</h6>
+                                            <p><code>c, cpp, json, java, py, rb, php</code><br></p>
+                                            <p><code>js, swift, .kt, rust, dart, lua</code> can be added from Settings <img src="img/icon_gear.png" alt="icon_gear"> /Index.<br></p>
+                                            <p><img src="img/overview_02.png" alt="overview_02.png"></p>
+                                            <h6 id="image-formats">Image Formats</h6>
+                                            <p> <code>&apos;png&apos;, &apos;jpg&apos;, &apos;jpeg&apos;</code></p>
+                                            <h6 id="audio-formats">Audio Formats</h6>
+                                            <p><code>&apos;wav&apos;</code></p>
+                                            <h2 id="file-saving-location">File Saving Location</h2>
+                                            <p>ailia DX Insight saves database and model files in the following folders. By deleting these folders, you can initialize ailia DX Insight.<br>
+                                            <code>Windows : c:/Users/[UserName]/Documents(*)/ailia DX Insight</code><br>
+                                            <code>macOS : ~/Documents(*)/ailia DX Insight</code><br></p>
+                                            <p><br>
+                                            (*) In Windows it may be displayed as &quot;My Documents&quot;, and in Mac as &quot;Documents&quot;.</p>
+                                            <p><br></p>
+                                            <h4 id="next ＞"><a href="SetUp.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +709,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: HOME">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="SetUp.html" class="navigation navigation-next " aria-label="Next page: Setup">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

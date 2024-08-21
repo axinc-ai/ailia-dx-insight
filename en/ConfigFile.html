@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Creating a Config File · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -143,7 +143,7 @@
                                     
                                 </li>
 
-                                <li class="chapter " data-level="2.1.3" data-path="ConfigFile.html">
+                                <li class="chapter active" data-level="2.1.3" data-path="ConfigFile.html">
                                     
                                     <a href="ConfigFile.html">
                                 
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,28 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
+                                        <h1 id="creating-a-config-file">Creating a Config File</h1>
+                                        <p>By creating a config file, you can display the terms image when starting the application or always display the company logo.<br>
+                                        *The config file can be selected at the initial startup of ailia DX Insight.<br>
+                                        <img src="img/setup_001.png" alt="setup"><br></p>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h2 id="example-of-creating-a-config-file">Example of Creating a Config File</h2>
+                                        <p>Create the config format in json.</p>
+                                        <pre><code>{<br>    &quot;apiKey&quot; : {<br>        &quot;openAI&quot;: &quot;YourOpenAIApiKey&quot;<br>    }<br>    &quot;licenseFile&quot;: &quot;/path/to/license/file&quot;,<br>    &quot;terms&quot;: {<br>    &quot;image&quot;: &quot;/path/to/terms/image&quot;<br>    },<br>    &quot;logo&quot;: &quot;path/to/logo/image&quot;,<br>    &quot;watermark&quot;: &quot;"path/to/watermark/image&quot;,<br>}
+                                        </code></pre><p><code>&quot;apiKey&quot;</code><br>
+                                        Enter the OpenAI API key here.<br>
+                                        <code>&quot;licenseFile&quot;</code><br>
+                                        Specify the path to the license file as a relative path from the config file.<br>
+                                        <code>&quot;terms&quot;</code> <code>&quot;logo&quot;</code><br>
+                                        Specify the path to the image file as a relative path from the config file.</p>
+                                        <p>Other than the license file item, the omission of items does not affect the startup of the app.</p>
+                                        <h2 id="applying-the-config-file">Applying the Config File</h2>
+                                        <p>At the initial startup of ailia DX Insight, a window will display saying &quot;Please select the license file or config file&quot;. Specify the folder to apply.<br>
+                                        Place the created config file in a shared folder within the company.<br>
+                                        <br>
+                                        Since settings and image files are copied locally, access to the shared folder after initial setup is not required.</p>
+                                        <p><br></p>
+                                        <h4 id="next ＞"><a href="UseAI.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +645,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="IndexRegister.html" class="navigation navigation-prev " aria-label="Previous page: Registering Files to Index">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="UseAI.html" class="navigation navigation-next " aria-label="Next page: Use AI">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

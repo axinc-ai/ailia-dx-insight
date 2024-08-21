@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Search Images · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -262,7 +262,7 @@
                                     
                                 </li>
 
-                                <li class="chapter " data-level="3.1.6" data-path="SearchImage.html">
+                                <li class="chapter active" data-level="3.1.6" data-path="SearchImage.html">
                                     
                                     <a href="SearchImage.html">
                                 
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,27 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
+                                        <h1 id="search-images">Search Images</h1>
+                                        <p>By registering image files to an index, you can perform a similar image search. The search will be executed on the indexed image files. There are two search methods: text search and image search.<br></p>
+                                        <p>Look <a href="IndexRegister.html">here</a> for how to register files to indexes.</p>
+                                        <h2 id="search-by-text">Search by Text</h2>
+                                        <p>You can search for images similar to the search word.</p>
                                         <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
+                                        <li>Select &quot;Image Search&quot; from the app menu at the top left of the screen.<br>
+                                        <img src="img/UseAI_13.png" alt="useai_13.png"><br></li>
+                                        <li>Enter the search word into the chatbox and send it.</li>
+                                        <li>The search results will be displayed in order of similarity. Clicking the displayed search results will arrange all images in the order of similarity and display them in a grid.</li>
                                         </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h2 id="search-by-image">Search by Image</h2>
+                                        <ol>
+                                        <li>Right-click the image file you want to search in &quot;Similar searches on this image&quot; mode, and select &quot;Search by this image&quot;.<br>
+                                        <img src="img/UseAI_15.png" alt="useai_15.png"><br></li>
+                                        <li>The search results will be displayed in order of similarity. Clicking the displayed search results will arrange all images in similarity order and display them in a grid.</li>
+                                        </ol>
+                                        <p><br></p>
+                                        <h4 id="next ＞"><a href="GenerateImage.html">Next ＞</a></h4>
+                                        <h4 id="back-to-index"><a href="UseAI.html">Back to Index</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +644,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="Translation.html" class="navigation navigation-prev " aria-label="Previous page: Translate Document Files">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="GenerateImage.html" class="navigation navigation-next " aria-label="Next page: Generate Images">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

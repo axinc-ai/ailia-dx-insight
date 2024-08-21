@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Build Custom LLM with LM Studio · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -372,7 +372,7 @@
                                             
                                         </li>
 
-                                        <li class="chapter " data-level="4.1.1.2" data-path="CustomLLM_LMstudio.html">
+                                        <li class="chapter active" data-level="4.1.1.2" data-path="CustomLLM_LMstudio.html">
                                             
                                             <a href="CustomLLM_LMstudio.html">
                                         
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,51 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
+                                        <h1 id="build-custom-llm-with-lm-studio">Build Custom LLM with LM Studio</h1>
+                                        <h2 id="installing-lm-studio">Installing LM Studio</h2>
                                         <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
+                                        <li>Install LM Studio from <a href="https://lmstudio.ai/" target="_blank">https://lmstudio.ai/</a><br>
+                                        <img src="img/CustomLLM_03.png" alt="CustomLLM_03"><br></li>
                                         </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
+                                        <h2 id="downloading-custom-llms">Downloading Custom LLMs</h2>
+                                        <ol>
+                                        <li>Launch LM Studio and search for LLM from the search bar in the center of the screen.
+                                        Using &quot;DataPilot-ArrowPro-7B-KUJIRA-gguf&quot; as an example, let&apos;s build an LLM.<br>
+                                        <img src="img/CustomLLM_04.png" alt="CustomLLM_04"><br></li>
+                                        <li>Search results will appear on the right side of the screen.<br>
+                                        Once you find the desired LLM, click &quot;Download&quot; to start the model download.<br>
+                                        <img src="img/CustomLLM_05.png" alt="CustomLLM_05"><br></li>
+                                        </ol>
+                                        <h2 id="launching-custom-llms">Launching Custom LLMs</h2>
+                                        <ol>
+                                        <li>After downloading, click the &quot;↔&quot; button in the left sidebar to change the screen mode.<br>
+                                        Click &quot;Select a model to load&quot; at the top of the screen to see the list of downloaded LLMs in a dropdown. Select the downloaded model.<br>
+                                        <img src="img/CustomLLM_06.png" alt="CustomLLM_06"><br><ul>
+                                        <li>The URL for the custom LLM to be used in ailia DX Insight will be displayed near the center of the screen. (It is usually set to localhost:1234)<br>
+                                        <img src="img/CustomLLM_07.png" alt="CustomLLM_07"><br></li>
+                                        <li>The number specified in the context_length under &quot;Model Inspector&quot; on the right side of the screen is used as the &quot;Maximum Token Count&quot; in ailia DX Insight settings.<br>
+                                        <img src="img/CustomLLM_08.png" alt="CustomLLM_08"><br></li>
+                                        </ul>
+                                        </li>
+                                        </ol>
+                                        <h2 id="registering-custom-llm-in-ailia-dx-insight">Registering Custom LLM in ailia DX Insight</h2>
+                                        <p>Refer to <a href="CustomLLM.html">here</a> for detailed settings.<a href="CustomLLM.html">here</a><br>
+                                        <img src="img/CustomLLM_02_02.png" alt="CustomLLM_02_02.png"><br></p>
                                         <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
+                                        <li>Name: The name of the LLM to be used (can be anything as it is used only for UI display)</li>
                                         <li>Description: Use as a memo as needed</li>
+                                        <li>Model: The name of the downloaded model</li>
+                                        <li>URL(*): The URL displayed when launching the custom LLM (normally set to localhost:1234)</li>
+                                        <li>Maximum Token Length: The <code>context_length</code> value displayed when launching the custom LLM
+                                        <br></li>
                                         </ul>
+                                        <p>(*) If not filled, an HTTP connection error will occur.<br></p>
+                                        <h2 id="improving-processing-speed-of-local-llms">Improving Processing Speed of Local LLMs</h2>
+                                        <p>You can change the percentage of GPU memory usage by modifying the parameter values in &quot;GPU Settings&quot; under &quot;Advanced Configuration&quot; on the right side of the screen.<br>
+                                        Setting the GPU Offload parameter to the maximum allows for fast processing using GPU memory.<br>
+                                        <img src="img/CustomLLM_09.png" alt="CustomLLM_09"><br></p>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="CustomLLM_Ollama.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +668,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="CustomLLM.html" class="navigation navigation-prev " aria-label="Previous page: Set up Custom LLM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="CustomLLM_Ollama.html" class="navigation navigation-next " aria-label="Next page: Build Custom LLM with Ollama">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

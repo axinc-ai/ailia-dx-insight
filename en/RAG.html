@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Improve Response Accuracy with RAG · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -429,7 +429,7 @@
                                 
                                 </li>
 
-                                <li class="chapter " data-level="4.1.2" data-path="RAG.html">
+                                <li class="chapter active" data-level="4.1.2" data-path="RAG.html">
                                     
                                     <a href="RAG.html">
                                 
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,29 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
+                                        <h1 id="improving-answer-accuracy-with-rag">Improving Answer Accuracy with RAG</h1>
+                                        <h2 id="what-is-rag">What is RAG</h2>
+                                        <p>Retrieval-Augmented Generation (RAG) is a technique that combines text generation by large language models (LLMs) with external information retrieval to suppress the generation of information not based on facts and improve the accuracy of AI responses.<br></p>
+                                        <p><img src="img/RAG_01.png" alt="RAG_01.png"><br></p>
+                                        <p>Due to the token limit of ChatGPT, a large number of documents cannot be supplied as-is.
+                                        Therefore, prior information retrieval using RAG is performed in ailia DX Insight, and answers are generated based on a part of that information.<br></p>
+                                        <p><img src="img/RAG_02.png" alt="RAG_02.png"><br></p>
+                                        <h2 id="about-max-token-length">About Max Token Length</h2>
+                                        <p><code>chatgpt-3.5 : 2k</code><br>
+                                        <code>chatgpt-3.5-turbo (16kと統合された）：16k</code><br>
+                                        <code>chatgpt-4 : 8k</code><br>
+                                        <code>chatgpt-4-turbo : 128k</code><br></p>
+                                        <p>The more tokens, the more information chunks can be fed together, improving accuracy. However, responses become slower, and costs increase accordingly.</p>
+                                        <h2 id="rag-settings">RAG Settings</h2>
                                         <ol>
                                         <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
                                         <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
+                                        <li>Select &quot;RAG&quot; from the items on the left.<br>
+                                        <img src="img/RAG_03.png" alt="RAG_03.png"></li>
+                                        <li>You can set rerank and TOPK.</li>
                                         </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="Embedding.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +646,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="CustomLLM_Recomend.html" class="navigation navigation-prev " aria-label="Previous page: Our Recommended LLM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="Embedding.html" class="navigation navigation-next " aria-label="Next page: About Embedding">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

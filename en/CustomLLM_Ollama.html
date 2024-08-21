@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Build Custom LLM with Ollama · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -385,7 +385,7 @@
                                 
                                         </li>
 
-                                        <li class="chapter " data-level="4.1.1.3" data-path="CustomLLM_Ollama.html">
+                                        <li class="chapter active" data-level="4.1.1.3" data-path="CustomLLM_Ollama.html">
                                             
                                             <a href="CustomLLM_Ollama.html">
                                         
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,83 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
+                                        <h1 id="build-custom-llm-with-ollama">Build Custom LLM with Ollama</h1>
+                                        <h2 id="installing-ollama">Installing Ollama</h2>
+                                        <p>Install Ollama from <a href="https://ollama.com" target="_blank">https://ollama.com</a><br>
+                                        <img src="img/CustomLLM_10.png" alt="CustomLLM_10"><br></p>
+                                        <h2 id="launching-ollama-windows">Launching Ollama (Windows)</h2>
                                         <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
+                                        <li><p>Launch the installed &quot;OllamaSetup.exe&quot; to install it.<br>
+                                        <img src="img/CustomLLM_11.png" alt="CustomLLM_11"><br></p>
+                                        </li>
+                                        <li><p>After installation, launch Command Prompt and confirm the path is set correctly.<br>
+                                        Execute <code>ollama --help</code> in Command Prompt and confirm that the following help screen appears.<br></p>
+                                        </li>
                                         </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
+                                        <pre><code>Large language model runner
+
+                                        Usage:
+                                        ollama [flags]
+                                        ollama [command]
+
+                                        Available Commands:
+                                        serve       Start ollama
+                                        create      Create a model from a Modelfile
+                                        show        Show information for a model
+                                        run         Run a model
+                                        pull        Pull a model from a registry
+                                        push        Push a model to a registry
+                                        list        List models
+                                        ps          List running models
+                                        cp          Copy a model
+                                        rm          Remove a model
+                                        help        Help about any command
+
+                                        Flags:
+                                        -h, --help      help for ollama
+                                        -v, --version   Show version information
+
+                                        Use &quot;ollama [command] --help&quot; for more information about a command.
+                                        </code></pre><h2 id="downloading-llms">Downloading LLMs</h2>
+                                        <ol>
+                                        <li><p>Download the LLM to run locally using the <code>ollama pull</code> command.
+                                        For example, to download Google&apos;s gemma-2-9B, enter <code>ollama pull gemma2</code> in Command Prompt.<br>
+                                        <img src="img/CustomLLM_12.png" alt="CustomLLM_12"><br></p>
                                         <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
+                                        <li>If you want other PCs to access this local LLM, execute <code>set OLLAMA_HOST=0.0.0.0</code> in Command Prompt and set the OLLAMA_HOST environment to &quot;0.0.0.0&quot;.</li>
                                         </ul>
                                         </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
+                                        <li><p>Execute <code>ollama serve</code> in Command Prompt to start the LLM.<br>
+                                        <img src="img/CustomLLM_14.png" alt="CustomLLM_14"><br></p>
+                                        <ul>
+                                        <li>If &quot;Listening on [::]:11434&quot; is displayed, it can be accessed from other PCs.</li>
+                                        <li>If &quot;Listening on 127.0.0.1:11434&quot; is displayed, it can only be accessed from that PC.
+                                        The value &quot;11434&quot; is the port number to use in the ailia DX Insight settings.</li>
                                         </ul>
                                         </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
+                                        </ol>
+                                        <h2 id="registering-custom-llm-in-ailia-dx-insight">Registering Custom LLM in ailia DX Insight</h2>
+                                        <p>Refer to <a href="CustomLLM.html">here</a> for detailed settings.<br>
+                                        <img src="img/CustomLLM_02_03.png" alt="CustomLLM_02_03.png"><br></p>
+                                        <ul>
+                                        <li>Name: The name of the LLM to be used (can be anything as it is used only for UI display)</li>
                                         <li>Description: Use as a memo as needed</li>
+                                        <li>Model: The name of the downloaded model (in this example, gemma2)</li>
+                                        <li>URL(*): The URL of the port displayed by ollama serve (in this example, <a href="http://localhost:11434" target="_blank">http://localhost:11434</a>)</li>
+                                        <li>Maximum Token Length: For gemma-2-9B, it is &quot;8192&quot;.
+                                        <br></li>
                                         </ul>
+                                        <p>(*) If not filled, an HTTP connection error will occur.<br></p>
+                                        <h2 id="deleting-downloaded-llms">Deleting Downloaded LLMs</h2>
+                                        <p>If LLMs take up too much space or the wrong model is downloaded, you can delete them through the following steps.</p>
+                                        <ol>
+                                        <li>Execute <code>ollama list</code> in Command Prompt to display the list of downloaded models.</li>
+                                        <li>Execute <code>ollama rm &quot;model_name&quot;</code> in Command Prompt to delete the downloaded model.
+                                        <br>
+                                        <img src="img/CustomLLM_13.png" alt="CustomLLM_13.png"><br></li>
+                                        </ol>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="CustomLLM_FastChat.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +700,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="CustomLLM_LMstudio.html" class="navigation navigation-prev " aria-label="Previous page: Build Custom LLM with LM Studio">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="CustomLLM_FastChat.html" class="navigation navigation-next " aria-label="Next page: Build Custom LLM with FastChat">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

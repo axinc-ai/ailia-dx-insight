@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Take Meeting Minutes · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -291,7 +291,7 @@
                                     
                                 </li>
 
-                                <li class="chapter " data-level="3.1.8" data-path="Recording.html">
+                                <li class="chapter active" data-level="3.1.8" data-path="Recording.html">
                                     
                                     <a href="Recording.html">
                                 
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,35 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
+                                        <h1 id="take-meeting-minutes">Take Meeting Minutes</h1>
+                                        <p>With voice recognition AI, you can take meeting minutes without moving your hands.</p>
                                         <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
+                                        <li>Click &quot;Create Minutes&quot; from the app menu at the top left of the screen to open the meeting minutes screen.<br>
+                                        <img src="img/UseAI_18.png" alt="useai_18.png"><br> </li>
+                                        <li>Enter the meeting place into &quot;Enter Location&quot; at the top right of the screen. You can also change the meeting name.<br>
+                                        <img src="img/UseAI_19.png" alt="useai_19.png"><br></li>
+                                        <li>Click the “Start Recording” button at the bottom of the screen to start taking the minutes.<br>
+                                        <img src="img/UseAI_20.png" alt="useai_20.png"><br></li>
+                                        <li><p>If the AI model necessary for voice recognition has not been downloaded, the download will start. It will be available for use once the download is complete.</p>
+                                        <p><a href="VoiceInput.html">Downloading AI models required for speech recognition</a></p>
+                                        </li>
+                                        <li><p>When you wish to end the recording, click the &quot;Stop Recording&quot; button at the bottom to save the minutes.<br>
+                                        <img src="img/UseAI_21.png" alt="useai_21.png"><br>
+                                        <br></p>
+                                        </li>
                                         </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
-                                        <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
+                                        <h2 id="viewing-recorded-minutes">Viewing Recorded Minutes</h2>
+                                        <p>Click on the recorded minutes lined up on the left side of the meeting minutes screen to view the recorded minutes.<br>
+                                        <img src="img/UseAI_22.png" alt="useai_22.png"><br>
+                                        You can correct the text by clicking the button on the right side of the recorded text.<br>
+                                        <img src="img/UseAI_23.png" alt="useai_23.png"><br>
+                                        You can start recording minutes again by clicking the “Start Recording” button at the bottom of the screen.</p>
+                                        <h2 id="export-minutes-to-a-text-file">Export minutes to a text file</h2>
+                                        <p>You can export the minutes as a txt file by right-clicking on the minutes on the left side of the recording screen and selecting &quot;Export the contents.&quot;<br>
+                                        <img src="img/UseAI_24.png" alt="useai_24.png"><br></p>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="VoiceInput.html">Next ＞</a></h4>
+                                        <h4 id="back-to-index"><a href="UseAI.html">Back to Index</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +652,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="GenerateImage.html" class="navigation navigation-prev " aria-label="Previous page: Generate Images">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="VoiceInput.html" class="navigation navigation-next " aria-label="Next page: Using Voice Input">
                     <i class="fa fa-angle-right"></i>
                 </a>
             

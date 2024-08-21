@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Azure OpenAI Service · ailia DX Insight</title>
+        <title>Registering Files to Index · ailia DX Insight</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 5.1.4">
@@ -129,7 +129,7 @@
                                     
                                 </li>
 
-                                <li class="chapter " data-level="2.1.2" data-path="IndexRegister.html">
+                                <li class="chapter active" data-level="2.1.2" data-path="IndexRegister.html">
                                     
                                     <a href="IndexRegister.html">
                                 
@@ -459,7 +459,7 @@
                                     
                                 </li>
 
-                                <li class="chapter active" data-level="4.1.4" data-path="AzureOpenAI.html">
+                                <li class="chapter " data-level="4.1.4" data-path="AzureOpenAI.html">
                                     
                                     <a href="AzureOpenAI.html">
                                 
@@ -598,38 +598,26 @@
                                 
                                     <section class="normal markdown-section">
                                     
-                                        <h1 id="azure-openai-service">Azure OpenAI Service</h1>
-                                        <p>ailia DX insight conducts text generation through ChatGPT.
-                                        It is also possible to use ChatGPT via the Azure OpenAI Service in addition to the OpenAI API.
-                                        For details on Azure OpenAI Service, please refer to <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/overview" target="_blank">here</a>.</p>
-                                        <h2 id="how-to-connect-to-azure-openai-service">How to Connect to Azure OpenAI Service</h2>
-                                        <h3 id="calling-the-settings-window">Calling the Settings Window</h3>
-                                        <ol>
-                                        <li>In the initial screen of ailia DX insight, click the gear icon in the upper right to display the settings window.<br>
-                                        <img src="img/setup_03.png" alt="setup_03.png"><br></li>
-                                        <li>Click &quot;Azure OpenAI Service&quot; in the &quot;Chat AI&quot; items and select &quot;+ Add&quot;.
-                                        <img src="img/azure_01.png" alt="azure_01.png"><br></li>
-                                        </ol>
-                                        <h3 id="register-azure-openai-service-settings">Register Azure OpenAI Service Settings</h3>
-                                        <p>A window will open to register the ChatGPT deployed in Azure. Fill in each item.<br>
-                                        <img src="img/azure_02.png" alt="azure_02.png"><br></p>
+                                        <h1 id="registering-files-to-index">Registering Files to Index</h1>
+                                        <p>By registering files to the index, you can apply various AI functions to those files.</p>
+                                        <p><a href="DocumentFile.html">Ask Questions about Document Files</a></p>
+                                        <p><a href="SummarizeDocument.html">Summarize Document Files</a></p>
+                                        <p><a href="Translation.html">Translate Document Files</a></p>
+                                        <p><a href="SearchImage.html">Search Images</a></p>
+                                        <h2 id="register-files-to-index">Register Files to Index</h2>
                                         <ul>
-                                        <li>Name: Name used for UI display</li>
-                                        <li>API Key: API key of the resource where ChatGPT is deployed</li>
-                                        <li>Deployment Name: Deployment name set when ChatGPT was deployed</li>
-                                        <li>API Version: The API version to use<ul>
-                                        <li>The &quot;Supported versions&quot; on <a href="https://learn.microsoft.com/ja-jp/azure/ai-services/openai/reference" target="_blank">this page</a> are available.</li>
+                                        <li>Right-click the file you want to register and select &quot;Add this file to the index.&quot; Registration is complete when the AI status icon of the selected file becomes a checkmark<img src="img/status_icon_done.png" alt="status_icon_done.png">.<br>
+                                        <img src="img/UseAI_06.png" alt="useai_06.png"><br></li>
+                                        <li>Right-click the folder, and select &quot;Add all files in this folder to index&quot; to register all files in the folder to index.
+                                        <br></li>
                                         </ul>
-                                        </li>
-                                        <li>Resource Name: The name of the resource where ChatGPT is deployed<ul>
-                                        <li>ChatGPT deployed endpoint<code>https://RESOURCE_NAME.openai.azure.com/</code>corresponds to the RESOURCE_NAME part.</li>
-                                        </ul>
-                                        </li>
-                                        <li>Model: Deployed model name (gpt-3.5-turbo, etc.)</li>
-                                        <li>Description: Use as a memo as needed</li>
-                                        </ul>
+                                        <h2 id="removing-files-from-index">Removing Files from Index</h2>
+                                        <ol>
+                                        <li>If you want to remove it from the index, right-click the registered file and select &quot;Remove this file from the index.&quot; Removal is complete when the AI status icon of the selected file becomes an hourglass<img src="img/hourglass.png" alt="hourglass.png">.<br>
+                                        <img src="img/UseAI_09.png" alt="useai_09.png"><br></li>
+                                        </ol>
                                         <p><br></p>
-                                        <h4 id="next ＞"><a href="Gemini.html">Next ＞</a></h4>
+                                        <h4 id="next ＞"><a href="ConfigFile.html">Next ＞</a></h4>
 
                                                             
                                     </section>
@@ -655,12 +643,12 @@
                         
                 </div>         
                         
-                <a href="Embedding.html" class="navigation navigation-prev " aria-label="Previous page: About Embedding">
+                <a href="FileView.html" class="navigation navigation-prev " aria-label="Previous page: Operating File View">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Gemini.html" class="navigation navigation-next " aria-label="Next page: Gemini">
+                <a href="ConfigFile.html" class="navigation navigation-next " aria-label="Next page: Creating a Config File">
                     <i class="fa fa-angle-right"></i>
                 </a>
             
