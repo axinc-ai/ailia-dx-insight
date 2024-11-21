@@ -8,24 +8,35 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <p><img src="img/ailia_DX_logo_mini.jpg" alt="ロゴ" width="200px"></p>
     <div class="markdown-section">
-        <p><img src="img/ailia_DX_logo_mini.jpg" alt="ロゴ" width="200px"></p>
-        <h1>データベースのPC間移行ツール</h1>
-            <p>ailia DX Insightにおいて、PCを買い替えた場合など、データベースを移行する方法を解説します。</p>
-            <h2>WindowsにおけるPCの移行方法</h2>
+        
+        <h1>DX Insight データベース移行について</h1>
+        <p>PCを買い替えた場合などに、ユーザデータを移行する方法を説明します。</p>
+        <h2>ユーザデータの格納先について</h2>
+        <p>ailia DX Insightでは、「ユーザ/ドキュメント/ailia DX Insight/」フォルダにユーザデータが保存されています。<br>
+            「ドキュメント」フォルダのパスはWindowsの設定で変更することも可能です（Windows10/Windows11の場合）。</p>
+        <h2>WindowsのPCの移行方法</h2>
         <ol>
-            <li><p>移行元の~/Documents/ailia DX Insight/フォルダを、移行先の~/Documents/ailia DX Insight/フォルダにコピーします</p></li>
-            <li><p>移行元と移行先のファイルパスが同じ場合は操作は不要です</p></li>
-            <li><p>移行元と移行先のファイルパスが異なる場合は、移行ツールを起動します</p></li>
+            <li><p>移行元のPCの「ユーザ/ドキュメント/ailia DX Insight/」フォルダを、移行先の「ユーザ/ドキュメント/ailia DX Insight/」フォルダにコピーします</p></li>
+            <li><p>移行元と移行先のファイルパスが同じ場合は移行完了です</p></li>
+        </ol>
+        <h3>ailia DX Insightのパスが変わる場合</h3>
+        <p>移行元のPCと移行先のPCで、ドキュメントフォルダのパスが異なる場合、ユーザデータ内のパスを移行ツールを使用して変更する必要があります。</p>
+        <ol>
+            <li><p>移行ツールを起動します</p></li>
             <li><p>移行元と移行先のファイルパスが自動的に設定されますので、移行ボタンを押します</p></li>
-            <img src="img/起動画面02.png" alt="起動画面" width="100%">
+            <img src="img/起動画面02.png" alt="起動画面">
             <li><p>「処理が完了しました」というウィンドウが表示され、「終了する」を選択するとデータ移行が完了します</p></li>
-            <img src="img/移行完了.png" alt="移行完了" width="100%">
+            <img src="img/移行完了.png" alt="移行完了">
             <li><p>ailia DX Insightを起動し、データ移行が完了していることを確認してください</p></li>
+            <p>移行元のPCと、移行先のPCで、ドキュメントフォルダのパスが同じ場合、移行ツールを実行すると、「移行処理の必要がありません。そのままailia DX Insightをご利用ください。」と表示されます。</p>
+            <img src="img/image01.png" alt="image01">
             <p><br></p>
             <h4><a href="https://axinc-ai.github.io/ailia-dx-insight/ja/">ailia DX Insightドキュメントページ</a></h4>
             <p><br></p>
         </ol>
+        
     </div>
 </body>
 </html>

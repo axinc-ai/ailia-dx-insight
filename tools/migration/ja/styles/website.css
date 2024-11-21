@@ -118,13 +118,13 @@ body{
 }
 
 .markdown-section h4 a {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5em;
   display: block;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	width: 30%;
+	width: 200px;
 	margin: auto;
 	padding: 1em 4em;
 	font-weight: bold;
@@ -141,4 +141,9 @@ body{
 
 svg {
 	vertical-align: -3px;
+}
+
+.markdown-section img {
+  width: 100%;
+  max-width: 1024px;
 }
