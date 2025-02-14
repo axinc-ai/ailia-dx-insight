@@ -732,70 +732,131 @@
                                     <section class="normal markdown-section">
                                     
                                         <h1 id="recommended-llms-by-our-company">Recommended LLMs by Our Company</h1>
-                                        <p>A list of recommended LLMs for PCs with less than 8GB or up to 8GB of GPU memory.</p>
-                                        <h2 id="recommended-llm-list">Recommended LLM List</h2>
-                                        <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
-                                        <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
-                                        <p>Features: Provided by Microsoft. Despite being a very small model with 3.8B (3.8 billion parameters), it has performance equivalent to models more than twice its size.</p>
+                                        <p>We will introduce a list of recommended LLMs for PCs with GPU memory of less than 8GB to 8GB, classified by LLM parameter size into ultra-small, small, and medium (or larger).<br>
+                                        Some models offer multiple variants with different parameter counts, which can be identified by the numbers marked with B (Billion) within each model name. If you have extra GPU memory, you can search for and use higher models from sources like LM Studio.<br>
+                                        Please choose a model suited to your usage purpose and PC environment based on parameter size, RAM usage, and features. (The RAM usage listed may vary depending on the quantization method used).<br></p>
                                         <p><br></p>
-                                        <h3 id="qwenqwen2-05b--instruct-gguf">Qwen/Qwen2-0.5B -Instruct-GGUF</h3>
-                                        <h3 id="qwenqwen2-7b-instruct-gguf">Qwen/Qwen2-7B-Instruct-GGUF</h3>
-                                        <p>Features: Provided by Alibaba Cloud. It leverages training data in 27 languages in addition to English and Chinese, showing high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 0.5B model is very small and optimal for use on low-spec PCs due to its limited knowledge capacity.</p>
+                                        <h2 id="ultra-small-05b-to-4b">Ultra-Small (0.5B to 4B)</h2>
+                                        <h3 id="qwenqwen25-05b-instruct-gguf-ram-usage-118gb-or-more">Qwen/Qwen2.5-0.5B-Instruct-GGUF (RAM usage 1.18GB or more)</h3>
+                                        <h3 id="qwenqwen25-15b-instruct-gguf-ram-usage-127gb-or-more">Qwen/Qwen2.5-1.5B-Instruct-GGUF (RAM usage 1.27GB or more)</h3>
+                                        <h3 id="qwenqwen25-3b-instruct-gguf-ram-usage-144gb-or-more">Qwen/Qwen2.5-3B-Instruct-GGUF (RAM usage 1.44GB or more)</h3>
+                                        <p>Features:
+                                        These are LLMs provided by Alibaba Cloud, utilizing training data in 27 languages in addition to English and Chinese, and demonstrating high performance in benchmarks like natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support.
+                                        Being an extremely small model at 0.5B, it has limited knowledge but is optimal for use on low-spec PCs.
+                                        In Qwen2.5, performance in various specialized areas has been significantly enhanced, evolving into a language model capable of handling diverse tasks.</p>
                                         <p><br></p>
-                                        <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf</h3>
-                                        <p>Features: A highly capable Japanese LLM created by integrating four models: Japanese-Starling-ChatV-7B, Ninja-v1-RP-expressive-v2, Vecteus-v1, and Japanese-Chat-Umievo-itr004-7b4.</p>
+                                        <h3 id="deepseek-r1-distill-qwen-15b-gguf-ram-usage-137gb-or-more">DeepSeek-R1-Distill-Qwen-1.5B-GGUF (RAM usage 1.37GB or more)</h3>
+                                        <p>Features:
+                                        This is a large-scale language model developed by DeepSeek in China, specialized for inference ability.
+                                        It demonstrates high performance comparable to major models in key benchmarks like inference tasks, math problems, coding, long text inference, and creative writing.
+                                        &quot;DeepSeek-R1-Distill-Qwen-14B/32B-Japanese,&quot; which has undergone additional training with Japanese data by CyberAgent, has been released.</p>
                                         <p><br></p>
-                                        <h3 id="microsoftphi-3-mini-4k-instruct-gguf">microsoft/Phi-3-mini-4k-instruct-gguf</h3>
-                                        <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf">QuantFactory/Phi-3-mini-128k-instruct-GGUF</h3>
-                                        <p>Features: Provided by Microsoft. Despite being a very small model with 3.8B (3.8 billion parameters), it has performance equivalent to models more than twice its size. Currently, two models supporting 4K tokens and 128K tokens are available.</p>
+                                        <h3 id="tinyswallow-15b-instruct-gguf-ram-usage-113gb-or-more">TinySwallow-1.5B-Instruct-GGUF (RAM usage 1.13GB or more)</h3>
+                                        <p>Features:
+                                        Announced by &quot;Sakana AI,&quot; an AI company based in Japan, this is a small-scale Japanese language model.
+                                        Developed utilizing a new knowledge distillation method called TAID (Time Adaptive Interpolation Distillation), it demonstrates the highest performance in benchmark tests evaluating Japanese functions among models of similar scale.
+                                        It is lightweight enough to operate on smartphones, enabling operation in resource-constrained environments.</p>
                                         <p><br></p>
-                                        <h3 id="qwenqwen2-05b--instruct-gguf">Qwen/Qwen2-0.5B -Instruct-GGUF</h3>
-                                        <h3 id="qwenqwen2-7b-instruct-gguf">Qwen/Qwen2-7B-Instruct-GGUF</h3>
-                                        <p>Features: Provided by Alibaba Cloud. It leverages training data in 27 languages in addition to English and Chinese, showing high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 0.5B model is very small and optimal for use on low-spec PCs due to its limited knowledge capacity.</p>
+                                        <h3 id="lmstudio-communitygemma-2-9b-it-gguf-ram-usage-232gb-to-915gb">lmstudio-community/gemma-2-9b-it-GGUF (RAM usage 2.32GB to 9.15GB)</h3>
+                                        <p>bartowski/gemma-2-2b-it-GGUF (RAM usage 1.79 to 3.05GB)</p>
+                                        <p>Features:
+                                        Built using the same architecture as Google’s cutting-edge AI model, Gemini, Gemma2 delivers high performance despite being lightweight.
+                                        The 27 billion parameter model, in particular, achieves top performance in its size class, rivaling models more than twice the size, while the 9 billion parameter model also shows excellent performance surpassing other open models of the same size.
+                                        Additionally, the 2 billion parameter model delivers class-leading performance relative to its size, making it suitable for use on notebooks, etc.</p>
                                         <p><br></p>
-                                        <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf</h3>
-                                        <p>Features: A highly capable Japanese LLM created by integrating four models: Japanese-Starling-ChatV-7B, Ninja-v1-RP-expressive-v2, Vecteus-v1, and Japanese-Chat-Umievo-itr004-7b4.</p>
+                                        <h3 id="microsoftphi-3-mini-4k-instruct-gguf-ram-usage-around-299gb">microsoft/Phi-3-mini-4k-instruct-gguf (RAM usage around 2.99GB)</h3>
+                                        <h3 id="quantfactoryphi-3-mini-128k-instruct-gguf-ram-usage-208-to-454gb">QuantFactory/Phi-3-mini-128k-instruct-GGUF (RAM usage 2.08 to 4.54GB)</h3>
+                                        <p>Features:
+                                        LLM provided by Microsoft, it has comparable performance to models more than twice its size despite being a very small model with 3.8B (3.8 billion parameters).
+                                        Currently, two models supporting 4K tokens and 128K tokens have been released.</p>
                                         <p><br></p>
-                                        <h3 id="mmngadatapilot-arrowpro-7b-kujira-gguf">mmnga/DataPilot-ArrowPro-7B-KUJIRA-gguf</h3>
-                                        <h3 id="mmngaarrowpro-7b-killerwhale-gguf">mmnga/ArrowPro-7B-KillerWhale-gguf</h3>
-                                        <p>Features: Developed based on the open-source LLM &quot;NTQAI/chatntq-ja-7b-v1.0&quot; for use in AI-powered virtual YouTubers (AITubers) and AI assistants. It has high performance in Japanese and is highly rated for conversation quality. &quot;ArrowPro-7B-KillerWhale&quot; is positioned as an enhanced version of &quot;DataPilot/ArrowPro-7B-KUJIRA&quot;.</p>
+                                        <h2 id="small-7b-to-9b">Small (7B to 9B)</h2>
+                                        <h3 id="qwenqwen25-7b-instruct-1m-gguf-ram-usage-197gb-or-more">Qwen/Qwen2.5-7B-Instruct-1M-GGUF (RAM usage 1.97GB or more)</h3>
+                                        <p>Features:
+                                        These are LLMs provided by Alibaba Cloud.
+                                        Utilizing training data in 27 languages in addition to English and Chinese, they demonstrate high performance in benchmarks like natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support.
+                                        Qwen2.5 has evolved into a language model capable of handling diverse tasks by significantly enhancing performance in various specialized areas.
+                                        Qwen2.5-1M is developed based on Qwen2.5-Turbo, making it possible to process up to 1 million tokens of context.</p>
                                         <p><br></p>
-                                        <h3 id="lmstudio-communitygemma-2-9b-it-gguf">lmstudio-community/gemma-2-9b-it-GGUF</h3>
-                                        <p>Features: Built using the same architecture as Google&apos;s cutting-edge AI model Gemini, Gemma2 is lightweight yet highly performant. The 27B parameter model delivers top-notch performance in its size class, competing with models more than twice its size. The 9B parameter model also outperforms other open models of the same size.</p>
+                                        <h3 id="qwenqwen25-7b-instruct-gguf-ram-usage-114gb-or-more">Qwen/Qwen2.5-7B-Instruct-GGUF (RAM usage 1.14GB or more)</h3>
+                                        <p>Features:
+                                        These are LLMs provided by Alibaba Cloud.
+                                        Utilizing training data in 27 languages in addition to English and Chinese, they demonstrate high performance in benchmarks like natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support.
+                                        Qwen2.5 has evolved into a language model capable of handling diverse tasks by significantly enhancing performance in various specialized areas.</p>
                                         <p><br></p>
-                                        <h3 id="lmstudio-communitymeta-llama-3-8b-instruct-gguf">lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF</h3>
-                                        <p>Features: Provided by Meta. Learned using about seven times the dataset of Llama2, it has rich knowledge and can handle a wide range of topics in detail. It has been improved to handle tasks such as generation and inference highly and efficiently.</p>
+                                        <h3 id="deepseek-r1-distill-qwen-7b-gguf-ram-usage-223gb-or-more">DeepSeek-R1-Distill-Qwen-7B-GGUF (RAM usage 2.23GB or more)</h3>
+                                        <h3 id="deepseek-r1-distill-llama-8b-gguf-ram-usage-204gb-or-more">DeepSeek-R1-Distill-Llama-8B-GGUF (RAM usage 2.04GB or more)</h3>
+                                        <p>Features:
+                                        A large-scale language model developed by DeepSeek in China, specialized for inference ability, demonstrating high performance comparable to major models in key benchmarks like inference tasks, math problems, coding, long text inference, and creative writing.
+                                        &quot;DeepSeek-R1-Distill-Qwen-14B/32B-Japanese,&quot; which has undergone additional training with Japanese data by CyberAgent, has been released.</p>
                                         <p><br></p>
-                                        <h3 id="mmngallama-3-elyza-jp-8b-gguf">mmnga/Llama-3-ELYZA-JP-8B-gguf</h3>
-                                        <p>A Japanese-specific LLM provided by ELYZA Inc., an AI company from Professor Matsuo&apos;s Lab at the University of Tokyo. Trained with a large Japanese dataset based on Meta&apos;s Llama 3 8B-Instruct, it is familiar with Japanese grammar, vocabulary, and cultural background, accurately understanding Japanese-specific expressions and nuances, and generating refined Japanese sentences.</p>
+                                        <h3 id="mmngaumiyuki-umievo-itr012-gleipnir-7b-gguf-ram-usage-233-to-634gb">mmnga/umiyuki-Umievo-itr012-Gleipnir-7B-gguf (RAM usage 2.33 to 6.34GB)</h3>
+                                        <p>Features:
+                                        A high-performing Japanese LLM completed by integrating four models: Japanese-Starling-ChatV-7B, Ninja-v1-RP-expressive-v2, Vecteus-v1, and Japanese-Chat-Umievo-itr004-7b4.</p>
                                         <p><br></p>
-                                        <h3 id="lmstudio-communitygemma-2-27b-it-gguf">lmstudio-community/gemma-2-27b-it-GGUF</h3>
-                                        <p>Features: Built using the same architecture as Google&apos;s cutting-edge AI model Gemini, Gemma2 is lightweight yet highly performant. The 27B parameter model delivers top-notch performance in its size class, competing with models more than twice its size. The 9B parameter model also outperforms other open models of the same size.</p>
+                                        <h3 id="mmngadatapilot-arrowpro-7b-kujira-gguf-ram-usage-226-to-349gb">mmnga/DataPilot-ArrowPro-7B-KUJIRA-gguf (RAM usage 2.26 to 3.49GB)</h3>
+                                        <h3 id="mmngaarrowpro-7b-killerwhale-gguf-ram-usage-226-to-624gb">mmnga/ArrowPro-7B-KillerWhale-gguf (RAM usage 2.26 to 6.24GB)</h3>
+                                        <p>Features:
+                                        Based on the open-source LLM &quot;NTQAI/chatntq-ja-7b-v1.0,&quot; this model was developed for use in AI applications like virtual YouTubers (AI Tubers) and AI assistants, demonstrating high performance in Japanese with high-quality conversations being highly regarded.
+                                        &quot;ArrowPro-7B-KillerWhale&quot; is positioned as an enhanced version of &quot;DataPilot/ArrowPro-7B-KUJIRA.&quot;</p>
                                         <p><br></p>
-                                        <h3 id="andrewcanisc4ai-command-r-v01-gguf">andrewcanis/c4ai-command-r-v01-GGUF</h3>
-                                        <p>Features: Command-R is an LLM made by CohereForAI, containing 35B (35 billion) parameters. This model excels in generating text, summarizing, and answering questions based on a large amount of information. It also supports long-contexts up to 128k tokens.</p>
+                                        <h3 id="mmngallama-31-8b-instruct-gguf-ram-usage-226-to-579gb">mmnga/Llama-3.1-8B-Instruct-gguf (RAM usage 2.26 to 5.79GB)</h3>
+                                        <p>Features:
+                                        The most advanced and high-performing LLM from Meta, Llama 3.1 supports advanced use cases like long-text summarization, multilingual conversation agents, coding assistance, etc., with a 128K context length, cutting-edge tool usage, and enhanced inference capabilities.</p>
                                         <p><br></p>
-                                        <h3 id="pmyslc4ai-command-r-plus-gguf">pmysl/c4ai-command-r-plus-GGUF</h3>
-                                        <p>Features: Command R+ is an enhanced version of Command R, containing 104B (104 billion) parameters. This model is designed to deliver exceptional performance for enterprise use, achieving performance close to GPT-4 Turbo while being open-source. It also supports long-contexts up to 128K tokens.
-                                        (Note) About the Use of command-r-v01/Command R Plus: command-r-v01/Command R Plus is an LLM intended for non-commercial use, allowing for model modification and distribution. For commercial use, the paid API service from the provider must be used, so please be aware. The paid API can be obtained from the following site: (<a href="https://cohere.com/command" target="_blank">https://cohere.com/command</a>)</p>
+                                        <h3 id="mmngallama-3-elyza-jp-8b-gguf-ram-usage-273-to-875gb">mmnga/Llama-3-ELYZA-JP-8B-gguf (RAM usage 2.73 to 8.75GB)</h3>
+                                        <p>Features:
+                                        Designed by ELYZA, an AI company from UTokyo Matsuo Lab, this LLM is specialized for Japanese.
+                                        Based on Meta&apos;s Llama 3 8B-Instruct, it is trained using large Japanese datasets, becoming well-acquainted with Japanese grammar, vocabulary, and cultural background, enabling it to accurately understand unique Japanese expressions and nuances while generating sophisticated Japanese text.</p>
                                         <p><br></p>
-                                        <h3 id="qwenqwen2-72b-instruct-gguf">Qwen/Qwen2-72B-Instruct-GGUF</h3>
-                                        <p>Provided by Alibaba Cloud. Leveraging training data in 27 languages in addition to English and Chinese, it shows high performance in benchmarks such as natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support. The 7B‧72B models support long-contexts up to 128K tokens.</p>
+                                        <h2 id="medium-or-larger">Medium (or Larger)</h2>
+                                        <h3 id="qwenqwen25-14b-instruct-1m-gguf">Qwen/Qwen2.5-14B-Instruct-1M-GGUF</h3>
+                                        <p>Features:
+                                        These are LLMs provided by Alibaba Cloud.
+                                        Utilizing training data in 27 languages in addition to English and Chinese, they demonstrate high performance in benchmarks like natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support.
+                                        Qwen2.5 has evolved into a language model capable of handling diverse tasks by significantly enhancing performance in various specialized areas.
+                                        Qwen2.5-1M is developed based on Qwen2.5-Turbo, making it possible to process up to 1 million tokens of context.</p>
                                         <p><br></p>
-                                        <h3 id="lmstudio-communitymeta-llama-3-70b-instruct-gguf">lmstudio-community/Meta-Llama-3-70B-Instruct-GGUF</h3>
-                                        <p>Features: Provided by Meta. Learned using about seven times the dataset of Llama2, it has rich knowledge and can handle a wide range of topics in detail. It has been improved to handle tasks such as generation and inference highly and efficiently.</p>
-                                        <h2 id="supplementary-information-about-our-recommended-llms足">Supplementary Information about Our Recommended LLMs足</h2>
-                                        <p>When you search for recommended LLMs in LM Studio, many models may be displayed as follows.<br>
-                                        We recommend using 4-bit quantized models, which are balanced in size and performance.<br>
-                                        (*Specifically, models with Q4_K_M notation or similar quantization)<br>
-                                        <img src="img/CustomLLM_15.png" alt="CustomLLM_15"><br></p>
+                                        <h3 id="qwenqwen25-14b-instruct-gguf">Qwen/Qwen2.5-14B-Instruct-GGUF</h3>
+                                        <h3 id="qwenqwen25-32b-instruct-gguf">Qwen/Qwen2.5-32B-Instruct-GGUF</h3>
+                                        <h3 id="qwenqwen25-72b-instruct-gguf">Qwen/Qwen2.5-72B-Instruct-GGUF</h3>
+                                        <p>Features:
+                                        These are LLMs provided by Alibaba Cloud.
+                                        Utilizing training data in 27 languages in addition to English and Chinese, they demonstrate high performance in benchmarks like natural language understanding, knowledge acquisition, coding, mathematics, and multilingual support.
+                                        Qwen2.5 has evolved into a language model capable of handling diverse tasks by significantly enhancing performance in various specialized areas.</p>
+                                        <p><br></p>
+                                        <h3 id="deepseek-r1-distill-qwen-14b-gguf">DeepSeek-R1-Distill-Qwen-14B-GGUF</h3>
+                                        <h3 id="deepseek-r1-distill-qwen-32b-gguf">DeepSeek-R1-Distill-Qwen-32B-GGUF</h3>
+                                        <h3 id="deepseek-r1-distill-llama-70b-gguf">DeepSeek-R1-Distill-Llama-70B-GGUF</h3>
+                                        <p>Features:
+                                        These are large-scale language models developed by DeepSeek in China, specialized for inference ability.
+                                        They demonstrate high performance comparable to major models in key benchmarks like inference tasks, math problems, coding, long text inference, and creative writing.
+                                        &quot;DeepSeek-R1-Distill-Qwen-14B/32B-Japanese,&quot; which has undergone additional training with Japanese data by CyberAgent, has been released.</p>
+                                        <p><br></p>
+                                        <h3 id="mmngaelyza-japanese-llama-2-13b-fast-instruct-gguf-ram-usage-613-to-1431gb">mmnga/ELYZA-japanese-Llama-2-13b-fast-instruct-gguf (RAM usage 6.13 to 14.31GB)</h3>
+                                        <p>Features:
+                                        Designed by ELYZA, an AI company from UTokyo Matsuo Lab, this LLM is specialized for Japanese.
+                                        Based on Meta&apos;s Llama 2 13B, it is trained using large Japanese datasets, becoming well-acquainted with Japanese grammar, vocabulary, and cultural background, enabling it to accurately understand unique Japanese expressions and nuances while generating sophisticated Japanese text.</p>
+                                        <p><em>Note: A new ELYZA model based on Llama3 is expected to be released soon (as of June 27, 2024).</em></p>
+                                        <p><br></p>
+                                        <h3 id="lmstudio-communitygemma-2-27b-it-gguf-ram-usage-8-to-2965gb">lmstudio-community/gemma-2-27b-it-GGUF (RAM usage 8 to 29.65GB)</h3>
+                                        <p>Features:
+                                        Gemma2 is built using the same architecture as Google’s cutting-edge AI model, Gemini, delivering high performance despite being lightweight.
+                                        The 27 billion parameter model achieves top performance in its size class, rivaling models more than twice the size, while the 9 billion parameter model also shows excellent performance surpassing other open models of the same size.</p>
+                                        <p><br></p>
+                                        <h3 id="andrewcanisc4ai-command-r-v01-gguf-ram-usage-8-to-1027gb">andrewcanis/c4ai-command-r-v01-GGUF (RAM usage 8 to 10.27GB)</h3>
+                                        <p>Features:
+                                        Command-R is an LLM created by CohereForAI, containing 35B (35 billion) parameters.
+                                        This model excels at generating or summarizing text, or answering questions based on large amounts of information.</p>
+                                        <p><br></p>
+                                        <h2 id="supplement-about-our-recommended-llms">Supplement about our recommended LLMs</h2>
+                                        <p>When searching for recommended LLMs on LM Studio, many models are expected to appear.
+                                        We recommend using models with a 4-bit quantization that offer excellent balance between size and performance.
+                                        Specifically, models with the notation Q4_K_M or similar quantization.</p>
+                                        <p><br></p>
                                         <h2 id="when-running-lm-studio-on-a-linux-server">When Running LM Studio on a Linux Server</h2>
-                                        <p>If you encounter the following error when trying to connect to ailia DX insight from a Linux server running LM Studio, it may be due to port access being blocked by the Linux server firewall settings.<br>
-                                        <img src="img/CustomLLM_16.png" alt="CustomLLM_16.png"><br>
-                                        Allow access to the port with the following command.<br>
-                                        <code>sudo ufw allow 1234/tcp</code><br>
-                                        (*Replace the above port number &quot;1234&quot; with the number set in LM Studio)<br>
-                                        <img src="img/CustomLLM_17.png" alt="CustomLLM_17.png"><br></p>
+                                        <p>If you encounter the following error when trying to connect from ailia DX insight while running LM Studio on a Linux server, it might be due to the server&apos;s firewall settings prohibiting access to the port.
+                                        Please allow access to the port with the command <code>sudo ufw allow 1234/tcp</code> (replace &quot;1234&quot; with the number set in LM Studio).</p>
                                         <p><br></p>
                                         <h4 id="next ＞"><a href="RAG.html">Next ＞</a></h4>
                                                             
