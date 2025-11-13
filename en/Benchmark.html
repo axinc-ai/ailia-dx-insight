@@ -52,6 +52,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="ChatHistory.html" />
+    
     
     <link rel="prev" href="LocalLLM.html" />
     
@@ -121,7 +123,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="v1_3update.html">
+        <li class="chapter " data-level="1.4" data-path="v1_4update.html">
+            
+                <a href="v1_4update.html">
+            
+                    
+                    <img src='img_icons/newspaper.png'>v1.4 release note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="v1_3update.html">
             
                 <a href="v1_3update.html">
             
@@ -134,7 +149,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="v1_2update.html">
+        <li class="chapter " data-level="1.6" data-path="v1_2update.html">
             
                 <a href="v1_2update.html">
             
@@ -147,7 +162,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="v1_1update.html">
+        <li class="chapter " data-level="1.7" data-path="v1_1update.html">
             
                 <a href="v1_1update.html">
             
@@ -350,7 +365,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.9" data-path="Recording.html">
+        <li class="chapter " data-level="3.1.9" data-path="EditImage.html">
+            
+                <a href="EditImage.html">
+            
+                    
+                    <img src='img_icons/palette.png'>Edit Images
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="Recording.html">
             
                 <a href="Recording.html">
             
@@ -363,7 +391,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.10" data-path="VoiceInput.html">
+        <li class="chapter " data-level="3.1.11" data-path="GenerateVoice.html">
+            
+                <a href="GenerateVoice.html">
+            
+                    
+                    <img src='img_icons/record_voice_over.png'>Voice Generation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="VoiceInput.html">
             
                 <a href="VoiceInput.html">
             
@@ -421,6 +462,19 @@
             
                     
                     <img src='img_icons/bar_chart.png'>Benchmark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="ChatHistory.html">
+            
+                <a href="ChatHistory.html">
+            
+                    
+                    <img src='img_icons/History.svg'>Chat History
             
                 </a>
             
@@ -583,6 +637,19 @@
             
                     
                     <img src='img_icons/psychology.png'>Gemini
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="Claude.html">
+            
+                <a href="Claude.html">
+            
+                    
+                    <img src='img_icons/psychology.png'>Claude
             
                 </a>
             
@@ -785,13 +852,13 @@
 <li>Select the execution environment.<br>
 Image search and voice search query processing, and reranking are models that do not support FP16. All other models for text registration, image registration, voice registration, OCR, and voice recognition support FP16. All models targeted for benchmarking are FP16 models. Therefore, please change the item above for &quot;Execution Environment (FP16 Supported Models).&quot;<br>
 <img src="img/benchmark_02.png" alt="benchmark_02"><br>
-Options for GPU and CPU will be displayed, so select the one you will use for generation.<br>
+Select the item you want to measure the benchmark for from &quot;Document Registration,&quot; &quot;Image Registration,&quot; &quot;Voice Registration,&quot; &quot;OCR,&quot; &quot;Voice Recognition,&quot; or &quot;Local LLM,&quot; and then select &quot;Run Benchmark.&quot;<br>
 <img src="img/benchmark_03.png" alt="benchmark_03"><br></li>
 <li>The time taken for document registration during generation will be measured, and the results will be displayed.<br>
 <img src="img/benchmark_04.png" alt="benchmark_04"><b></b></li>
 </ol>
 <p><br></p>
-<h4 id="next-page ＞"><a href="Security.html">Next Page ＞</a></h4>
+<h4 id="next-page ＞"><a href="ChatHistory.html">Next Page ＞</a></h4>
 
                                 
                                 </section>
@@ -819,10 +886,14 @@ Options for GPU and CPU will be displayed, so select the one you will use for ge
 
             
                 
-                <a href="LocalLLM.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: <img src='img_icons/tune.png'>Local LLM">
+                <a href="LocalLLM.html" class="navigation navigation-prev " aria-label="Previous page: <img src='img_icons/tune.png'>Local LLM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="ChatHistory.html" class="navigation navigation-next " aria-label="Next page: <img src='img_icons/History.svg'>Chat History">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -831,7 +902,7 @@ Options for GPU and CPU will be displayed, so select the one you will use for ge
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/bar_chart.png'>Benchmark","level":"4.1.2","depth":2,"next":{"title":"<img src='img_icons/more.png'>More Details","level":"5.1","depth":1,"ref":"","articles":[{"title":"<img src='img_icons/vpn_lock.png'>Construct Secure Environment","level":"5.1.1","depth":2,"path":"Security.md","ref":"Security.md","articles":[{"title":"<img src='img_icons/tune.png'>Set up Custom LLM","level":"5.1.1.1","depth":3,"path":"CustomLLM.md","ref":"CustomLLM.md","articles":[]},{"title":"<img src='img_icons/tune.png'>Build Custom LLM with LM Studio","level":"5.1.1.2","depth":3,"path":"CustomLLM_LMstudio.md","ref":"CustomLLM_LMstudio.md","articles":[]},{"title":"<img src='img_icons/tune.png'>Build Custom LLM with Ollama","level":"5.1.1.3","depth":3,"path":"CustomLLM_Ollama.md","ref":"CustomLLM_Ollama.md","articles":[]},{"title":"<img src='img_icons/tune.png'>Build Custom LLM with FastChat","level":"5.1.1.4","depth":3,"path":"CustomLLM_FastChat.md","ref":"CustomLLM_FastChat.md","articles":[]},{"title":"<img src='img_icons/tune.png'>Our Recommended LLM","level":"5.1.1.5","depth":3,"path":"CustomLLM_Recomend.md","ref":"CustomLLM_Recomend.md","articles":[]}]},{"title":"<img src='img_icons/book_4_spark.png'>Improve Response Accuracy with RAG","level":"5.1.2","depth":2,"path":"RAG.md","ref":"RAG.md","articles":[]},{"title":"<img src='img_icons/polyline.png'>About Embedding","level":"5.1.3","depth":2,"path":"Embedding.md","ref":"Embedding.md","articles":[]},{"title":"<img src='img_icons/psychology.png'>Azure OpenAI Service","level":"5.1.4","depth":2,"path":"AzureOpenAI.md","ref":"AzureOpenAI.md","articles":[]},{"title":"<img src='img_icons/psychology.png'>Gemini","level":"5.1.5","depth":2,"path":"Gemini.md","ref":"Gemini.md","articles":[]}]},"previous":{"title":"<img src='img_icons/tune.png'>Local LLM","level":"4.1.1","depth":2,"path":"LocalLLM.md","ref":"LocalLLM.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Benchmark.md","mtime":"2024-10-30T09:59:32.162Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-05-23T10:09:28.254Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"<img src='img_icons/bar_chart.png'>Benchmark","level":"4.1.2","depth":2,"next":{"title":"<img src='img_icons/History.svg'>Chat History","level":"4.1.3","depth":2,"path":"ChatHistory.md","ref":"ChatHistory.md","articles":[]},"previous":{"title":"<img src='img_icons/tune.png'>Local LLM","level":"4.1.1","depth":2,"path":"LocalLLM.md","ref":"LocalLLM.md","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","hide-published-with","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"img/favicon.ico","back-to-top-button":{},"custom-favicon":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ailia DX Insight","language":"ja","gitbook":"*"},"file":{"path":"Benchmark.md","mtime":"2025-11-11T09:12:11.153Z","type":"markdown"},"gitbook":{"version":"5.1.4","time":"2025-11-13T03:46:50.884Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
